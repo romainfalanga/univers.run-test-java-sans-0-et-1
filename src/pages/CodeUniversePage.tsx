@@ -382,19 +382,6 @@ De la même façon, notre corps est constitué de molécules, elles-mêmes faite
                 </div>
               </div>
             </div>
-
-            {/* L'Ultime Analogie */}
-            <div className="bg-gradient-to-br from-indigo-900/50 to-purple-900/40 backdrop-blur-sm rounded-xl lg:rounded-2xl p-4 sm:p-6 lg:p-8 border-2 border-indigo-400/40 shadow-2xl text-center mb-6 sm:mb-8 floating-card">
-              <h2 className="text-xl sm:text-2xl lg:text-3xl font-bold text-indigo-300 mb-4 sm:mb-6">
-                L'Ultime Analogie
-              </h2>
-              
-              <p className="text-base sm:text-lg lg:text-xl text-gray-200 leading-relaxed max-w-4xl mx-auto">
-                Dans cette vision, <strong className="text-yellow-300">Dieu est le développeur ultime</strong> : 
-                il a accès au code source de la réalité et peut orchestrer des modifications massives et coordonnées en temps réel. 
-                Nous, les êtres conscients, sommes les <strong className="text-cyan-300">"utilisateurs"</strong> de cette interface, sans jamais voir les trillions de 0 et 1 qui la génèrent à chaque instant.
-              </p>
-            </div>
           </div>
         </div>
 

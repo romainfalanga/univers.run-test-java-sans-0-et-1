@@ -458,7 +458,7 @@ De même, les classes qui composent un package n'existent pas à l\'avance sous 
               
               <div className="mt-4 sm:mt-6 bg-gradient-to-r from-cyan-900/40 to-blue-900/30 backdrop-blur-sm rounded-lg p-3 sm:p-4 border-l-4 border-cyan-400">
                 <p className="text-xs sm:text-sm lg:text-base text-cyan-100 leading-relaxed font-medium">
-                <strong className="text-cyan-300">Chaque couche encapsule la précédente :</strong> L'interface utilisateur que nous voyons est générée des vues, elles-mêmes issus de packages, résultant de classes qui sont faites de fonctions, variables et méthodes.
+                <strong className="text-cyan-300">Chaque couche encapsule la précédente :</strong> L'interface utilisateur que nous voyons est générée à partir des vues, elles-mêmes issues de packages, résultant de classes qui sont faites de fonctions, variables et méthodes.
 
 De la même façon, notre corps est constitué de molécules, elles-mêmes faites d'atomes, formés de nucléons, composés de particules fondamentales.
                 </p>
@@ -475,10 +475,10 @@ De la même façon, notre corps est constitué de molécules, elles-mêmes faite
               
               <div className="space-y-4 sm:space-y-6 text-sm sm:text-base lg:text-lg text-gray-200 leading-relaxed">
                 <p>
-                  Si l'univers est fait de code informatique, modifier des variables, fonctions ou méthodes depuis cette échelle engendrerait les compilations couche par couche des échelles supérieures, jusqu'à modifier les des vues, ce qui modifierait ensuite l'interface utilisateur (notre échelle macroscopique).
+                  Si l'univers est fait de code informatique, modifier des variables, fonctions ou méthodes depuis cette échelle engendrerait les compilations couche par couche des échelles supérieures, jusqu'à modifier les vues, ce qui modifierait ensuite l'interface utilisateur (notre échelle macroscopique).
                 </p>
                 <p>
-                  Une entité capable de manipuler directement des particules fondamentales, pourrait le temps d'une fraction de seconde, figer les probabilités de chaque échelle. Chaque Classes, Packages ou Vues modifiés existeraient alors pleinement, avant de redevenir incertains l'instant suivant. L'interface utilisateur, elle, resterait stable, mais sous le capot, les échelles de la mécanique quantique retourneraient à leur état de probabilités.
+                  Une entité capable de manipuler directement des particules fondamentales, pourrait le temps d'une fraction de seconde, figer les probabilités de chaque échelle. Chaque Classe, Package ou Vue modifié existerait alors pleinement, avant de redevenir incertain l'instant suivant. L'interface utilisateur, elle, resterait stable, mais sous le capot, les échelles de la mécanique quantique retourneraient à leur état de probabilités.
                 </p>
                 <p>
                   Une telle puissance permettrait de créer ce que l'on veut. Dans l'exemple qui suit, nous allons voir la cascade des échelles inversée pour la création d'un téléphone.
@@ -524,8 +524,8 @@ De la même façon, notre corps est constitué de molécules, elles-mêmes faite
                   
                   <div className="space-y-3">
                     {[
-                      { level: "Fonctions, Variables et Méthodes", desc: "Manipulations de milliards de milliards de Fonctions, Variables et Méthodes.", color: "bg-red-900/40 border-red-400" },
-                      { level: "Classes", desc: "Des milliards de Classes émergent de l'organisation des Fonctions, Variables et Méthoes et définissent des structures nouvelles.", color: "bg-yellow-900/40 border-yellow-400" },
+                      { level: "Fonctions, Variables et Méthodes", desc: "Manipulation de milliards de milliards de Fonctions, Variables et Méthodes.", color: "bg-red-900/40 border-red-400" },
+                      { level: "Classes", desc: "Des milliards de Classes émergent de l'organisation des Fonctions, Variables et Méthodes et définissent des structures nouvelles.", color: "bg-yellow-900/40 border-yellow-400" },
                       { level: "Packages", desc: "Des centaines de millions de Packages regroupent les Classes et structurent leur organisation.", color: "bg-green-900/40 border-green-400" },
                       { level: "Vues", desc: "Des millions de Vues se combinent, chacune issue de l'organisation des Packages.", color: "bg-blue-900/40 border-blue-400" },
                       { level: "Interface utilisateur", desc: "Un téléphone complet apparaît dans la réalité.", color: "bg-purple-900/40 border-purple-400" }

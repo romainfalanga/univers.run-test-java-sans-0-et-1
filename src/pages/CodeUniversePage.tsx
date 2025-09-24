@@ -458,7 +458,7 @@ De même, les classes qui composent un package n'existent pas à l'avance sous u
               
               <div className="mt-4 sm:mt-6 bg-gradient-to-r from-cyan-900/40 to-blue-900/30 backdrop-blur-sm rounded-lg p-3 sm:p-4 border-l-4 border-cyan-400">
                 <p className="text-xs sm:text-sm lg:text-base text-cyan-100 leading-relaxed font-medium">
-                <strong className="text-cyan-300">Chaque couche encapsule la précédente :</strong> L'interface utilisateur que nous voyons est générée par du HTML et du CSS, eux-mêmes issus des composants React, écrits en JavaScript. Ce JavaScript, à son niveau le plus fondamental, est composé de 0 et de 1.
+                <strong className="text-cyan-300">Chaque couche encapsule la précédente :</strong> L'interface utilisateur que nous voyons est générée des vues, eux-mêmes issus de packages, résultant de classes qui sont faites de fonctions, variables et méthodes.
 
 De la même façon, notre corps est constitué de molécules, elles-mêmes faites d'atomes, formés de nucléons, composés de particules fondamentales.
                 </p>

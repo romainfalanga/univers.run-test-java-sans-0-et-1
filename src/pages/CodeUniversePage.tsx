@@ -500,15 +500,7 @@ De la même façon, notre corps est constitué de molécules, elles-mêmes faite
                 
                 {/* Effet de pulsation divine */}
                 <div className="absolute inset-0 bg-gradient-to-r from-yellow-500/20 via-orange-500/20 to-red-500/20 rounded-full animate-pulse opacity-50 group-hover:opacity-80 transition-all duration-700"></div>
-                
-                {/* Contenu du bouton */}
-                <div className="relative z-10 flex items-center justify-center">
-                  <Binary className="w-6 h-6 sm:w-8 sm:h-8 mr-2 sm:mr-3 group-hover:animate-pulse drop-shadow-[0_0_10px_rgba(255,255,255,0.8)]" />
-                  <span className="text-base sm:text-lg lg:text-xl font-black whitespace-nowrap group-hover:text-yellow-100 transition-colors duration-500 drop-shadow-[0_0_15px_rgba(255,255,255,0.6)]">
-                    Dieu Code en Binaire
-                  </span>
-                </div>
-                
+                                
                 {/* Bordure lumineuse animée */}
                 <div className="absolute -inset-3 bg-gradient-to-r from-yellow-400 via-orange-400 to-red-400 rounded-full opacity-40 blur-xl animate-pulse group-hover:opacity-80 group-hover:blur-2xl transition-all duration-700"></div>
                 

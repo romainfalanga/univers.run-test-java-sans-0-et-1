@@ -6,7 +6,7 @@ export const CodeUniversePage: React.FC = () => {
   const location = useLocation();
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-slate-900 via-purple-900 to-indigo-900 relative overflow-hidden">
+    <div className="min-h-screen bg-gradient-to-br from-slate-900 via-purple-900 to-indigo-900 relative overflow-hidden pt-16 sm:pt-20">
       <div 
         className="min-h-screen relative z-10"
       >

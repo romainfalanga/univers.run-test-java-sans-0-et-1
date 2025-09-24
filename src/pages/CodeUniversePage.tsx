@@ -478,7 +478,7 @@ De la même façon, notre corps est constitué de molécules, elles-mêmes faite
                   Si l'univers est fait de code informatique, modifier des variables, fonctions ou méthodes depuis cette échelle engendrerait les compilations couche par couche des échelles supérieures, jusqu'à modifier les des vues, ce qui modifierait ensuite l'interface utilisateur (notre échelle macroscopique).
                 </p>
                 <p>
-                  Une entité capable de manipuler directement des particules fondamentales, pourrait le temps d'une fraction de seconde, figer les probabilités de chaque échelle. Chaque classes, packages ou vues manipulées existeraient alors pleinement, avant de redevenir incertains l'instant suivant. L'interface utilisateur, elle, resterait stable, mais sous le capot, les échelles de la mécanique quantique retourneraient à leur état de probabilités.
+                  Une entité capable de manipuler directement des particules fondamentales, pourrait le temps d'une fraction de seconde, figer les probabilités de chaque échelle. Chaque Classes, Packages ou Vues modifiés existeraient alors pleinement, avant de redevenir incertains l'instant suivant. L'interface utilisateur, elle, resterait stable, mais sous le capot, les échelles de la mécanique quantique retourneraient à leur état de probabilités.
                 </p>
                 <p>
                   Une telle puissance permettrait de créer ce que l'on veut. Dans l'exemple qui suit, nous allons voir la cascade des échelles inversée pour la création d'un téléphone.

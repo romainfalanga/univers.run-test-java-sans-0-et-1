@@ -118,7 +118,7 @@ export const Navigation: React.FC = () => {
   return (
     <>
       {/* Barre de navigation principale */}
-      <nav className="relative bg-gradient-to-r from-slate-900/95 via-blue-900/95 to-purple-900/95 backdrop-blur-xl border-b border-cyan-500/30 shadow-2xl z-50">
+      <nav className="fixed top-0 w-full bg-gradient-to-r from-slate-900/95 via-blue-900/95 to-purple-900/95 backdrop-blur-xl border-b border-cyan-500/30 shadow-2xl z-50">
         {/* Effet de grille futuriste en arrière-plan */}
         <div className="absolute inset-0 bg-[linear-gradient(90deg,rgba(6,182,212,0.05)_1px,transparent_1px),linear-gradient(rgba(6,182,212,0.05)_1px,transparent_1px)] bg-[size:20px_20px] opacity-20 z-10"></div>
         

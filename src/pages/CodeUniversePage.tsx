@@ -225,7 +225,7 @@ export const CodeUniversePage: React.FC = () => {
                   <div className="flex items-center mb-3 sm:mb-4">
                     <Globe className="w-6 h-6 sm:w-8 sm:h-8 mr-2 sm:mr-3 text-blue-400" />
                     <h3 className="text-base sm:text-lg lg:text-xl font-bold text-blue-300">
-                      Tissu de l'espace-temps
+                      Le tissu de l'espace-temps
                     </h3>
                   </div>
                   <div className="space-y-3 sm:space-y-4 text-xs sm:text-sm lg:text-base text-gray-200 leading-relaxed">
@@ -240,7 +240,7 @@ export const CodeUniversePage: React.FC = () => {
                   <div className="flex items-center mb-3 sm:mb-4">
                     <Cpu className="w-6 h-6 sm:w-8 sm:h-8 mr-2 sm:mr-3 text-purple-400" />
                     <h3 className="text-base sm:text-lg lg:text-xl font-bold text-purple-300">
-                      Serveur
+                      Le serveur
                     </h3>
                   </div>
                   <div className="space-y-3 sm:space-y-4 text-xs sm:text-sm lg:text-base text-gray-200 leading-relaxed">

@@ -194,12 +194,12 @@ export const CodeUniversePage: React.FC = () => {
                   </p>
                   
                   <p className="text-base sm:text-lg lg:text-xl text-gray-100 leading-relaxed font-medium">
-                    Chaque couche correspond à un langage ou à un niveau d'abstraction, qui encapsule le précédent et prépare le suivant.
+                    Chaque couche correspond à une échelle qui encapsule la suivante.
                   </p>
                   
                   <div className="bg-gradient-to-r from-yellow-900/40 to-amber-900/40 backdrop-blur-sm rounded-xl p-4 sm:p-5 border border-yellow-400/40 glow-border-yellow">
                     <p className="text-base sm:text-lg lg:text-xl text-yellow-100 leading-relaxed font-semibold">
-                      Ce que nous voyons à l'échelle humaine : "le monde macroscopique" est une interface utilisateur : le rendu final d'un immense processus de compilation qui descend jusqu'à une mer de 0 et 1.
+                      Ce que nous voyons à l'échelle humaine : "le monde macroscopique" est une interface utilisateur : le rendu final d'un immense processus.
                     </p>
                   </div>
                 </div>
@@ -240,12 +240,12 @@ export const CodeUniversePage: React.FC = () => {
                   <div className="flex items-center mb-3 sm:mb-4">
                     <Cpu className="w-6 h-6 sm:w-8 sm:h-8 mr-2 sm:mr-3 text-purple-400" />
                     <h3 className="text-base sm:text-lg lg:text-xl font-bold text-purple-300">
-                      Appareil électronique
+                      Serveur
                     </h3>
                   </div>
                   <div className="space-y-3 sm:space-y-4 text-xs sm:text-sm lg:text-base text-gray-200 leading-relaxed">
                     <p className="font-medium">
-                      L'appareil électronique est le support qui permet à l'interface de prendre forme : c'est le smartphone ou tout autre dispositif qui sert de support materiel au code et lui donne une existence concrète.
+                      Le serveur est le cadre fondamental dans lequel le code prend forme. Il contient toutes les couches de la cascade informatique et maintient l'ensemble de la hierarchie, rendant possible l'existence de chaque niveau.
                     </p>
                   </div>
                 </div>

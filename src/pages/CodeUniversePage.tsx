@@ -199,7 +199,7 @@ export const CodeUniversePage: React.FC = () => {
                   
                   <div className="bg-gradient-to-r from-yellow-900/40 to-amber-900/40 backdrop-blur-sm rounded-xl p-4 sm:p-5 border border-yellow-400/40 glow-border-yellow">
                     <p className="text-base sm:text-lg lg:text-xl text-yellow-100 leading-relaxed font-semibold">
-                      Ce que nous voyons à l'échelle humaine : "le monde macroscopique" est une interface utilisateur : le rendu final d'un immense processus.
+                      Ce que nous voyons à l'échelle humaine : "le monde macroscopique" est une interface utilisateur : le rendu final d'un immense processus d'encapsulation.
                     </p>
                   </div>
                 </div>

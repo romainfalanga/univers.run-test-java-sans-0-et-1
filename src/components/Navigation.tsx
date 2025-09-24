@@ -1,169 +1,7 @@
 import React, { useState } from 'react';
 import { useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
-import { Menu, X, Zap, Microscope } from 'lucide-react';
-
-// Fonction utilitaire pour générer un caractère aléatoire
-const getRandomCharacter = () => {
-  const characters = ['0', '1', 'q', 'ℓ'];
-  return characters[Math.floor(Math.random() * characters.length)];
-};
-
-// Composant pour les chiffres binaires qui se téléportent
-const TeleportingBinaryDigits: React.FC = () => {
-  const [digits, setDigits] = React.useState(() => 
-    Array.from({ length: 15 }, (_, i) => {
-      return {
-        id: i,
-        value: getRandomCharacter(),
-        top: Math.random() * 90 + 5,
-        left: Math.random() * 90 + 5,
-        opacity: Math.random() * 0.3 + 0.1,
-        size: ['text-xl', 'text-2xl', 'text-3xl'][Math.floor(Math.random() * 3)],
-        visible: true,
-        nextChangeTime: Date.now() + Math.random() * 200 + 100 // 0.1s à 0.3s
-      };
-    })
-  );
-
-  React.useEffect(() => {
-    const interval = setInterval(() => {
-      const now = Date.now();
-      setDigits(prevDigits => 
-        prevDigits.map(digit => {
-          if (now >= digit.nextChangeTime) {
-            if (digit.visible) {
-              // Disparaître complètement
-              return {
-                ...digit,
-                visible: false,
-                nextChangeTime: now + 200 // Réapparaître dans exactement 200ms
-              };
-            } else {
-              // Réapparaître à un nouvel endroit avec de nouvelles propriétés
-              return {
-                ...digit,
-                value: getRandomCharacter(),
-                top: Math.random() * 90 + 5,
-                left: Math.random() * 90 + 5,
-                opacity: Math.random() * 0.3 + 0.1,
-                size: ['text-xl', 'text-2xl', 'text-3xl'][Math.floor(Math.random() * 3)],
-                visible: true,
-                nextChangeTime: now + Math.random() * 800 + 400 // Rester visible 0.4s à 1.2s avant prochaine téléportation
-              };
-            }
-          }
-          return digit;
-        })
-      );
-    }, 300); // Vérification toutes les 300ms
-
-    return () => clearInterval(interval);
-  }, []);
-
-  return (
-    <>
-      {digits.map(digit => (
-        <div
-          key={digit.id}
-          className={`absolute ${digit.size} font-mono text-cyan-400 transition-opacity duration-300 select-none ${
-            digit.visible ? 'opacity-100' : 'opacity-0'
-          }`}
-          style={{
-            top: `${digit.top}%`,
-            left: `${digit.left}%`,
-            opacity: digit.visible ? digit.opacity : 0,
-            color: '#00FF41',
-            textShadow: '0 0 10px #00FF41, 0 0 20px #00FF41, 0 0 30px #00FF41',
-            transform: 'translate(-50%, -50%)'
-          }}
-        >
-          {digit.value}
-        </div>
-      ))}
-    </>
-  );
-};
-
-// Composant pour les chiffres binaires qui se téléportent dans le menu étendu
-const TeleportingBinaryDigitsMenu: React.FC = () => {
-  // Tableau des caractères possibles : 0, 1, q, ℓ
-  const characters = ['0', '1', 'q', 'ℓ'];
-  
-  // Fonction pour générer un caractère aléatoire
-  const getRandomCharacter = () => characters[Math.floor(Math.random() * characters.length)];
-
-  const [digits, setDigits] = React.useState(() => 
-    Array.from({ length: 28 }, (_, i) => {
-      return {
-        id: i,
-        digit: getRandomCharacter(),
-        top: Math.random() * 90 + 5,
-        left: Math.random() * 90 + 5,
-        size: ['text-xl', 'text-2xl', 'text-3xl'][Math.floor(Math.random() * 3)],
-        visible: true,
-        nextChangeTime: Date.now() + Math.random() * 2000 + 1000 // 1s à 3s
-      };
-    })
-  );
-
-  React.useEffect(() => {
-    const interval = setInterval(() => {
-      const now = Date.now();
-      setDigits(prevDigits => 
-        prevDigits.map(digit => {
-          if (now >= digit.nextChangeTime) {
-            if (digit.visible) {
-              // Disparaître complètement
-              return {
-                ...digit,
-                visible: false,
-                nextChangeTime: now + 3000 // Réapparaître dans exactement 3 secondes
-              };
-            } else {
-              // Réapparaître à un nouvel endroit avec de nouvelles propriétés
-              return {
-                ...digit,
-                digit: getRandomCharacter(),
-                top: Math.random() * 90 + 5,
-                left: Math.random() * 90 + 5,
-                size: ['text-xl', 'text-2xl', 'text-3xl'][Math.floor(Math.random() * 3)],
-                visible: true,
-                nextChangeTime: now + Math.random() * 6000 + 4000 // Rester visible 4s à 10s avant prochaine téléportation
-              };
-            }
-          }
-          return digit;
-        })
-      );
-    }, 500); // Vérification toutes les 500ms
-
-    return () => clearInterval(interval);
-  }, []);
-
-  return (
-    <>
-      {digits.map(digit => (
-        <div
-          key={digit.id}
-          className={`absolute ${digit.size} font-mono transition-opacity duration-300 select-none ${
-            digit.visible ? 'opacity-100' : 'opacity-0'
-          }`}
-          style={{
-            top: `${digit.top}%`,
-            left: `${digit.left}%`,
-            opacity: digit.visible ? 0.4 : 0,
-            color: '#00FF41',
-            textShadow: '0 0 10px #00FF41, 0 0 20px #00FF41, 0 0 30px #00FF41',
-            transform: 'translate(-50%, -50%)'
-          }}
-        >
-          {digit.digit}
-        </div>
-      ))}
-    </>
-  );
-};
+import { Menu, X } from 'lucide-react';
 
 export const Navigation: React.FC = () => {
   const location = useLocation();
@@ -284,11 +122,6 @@ export const Navigation: React.FC = () => {
         {/* Effet de grille futuriste en arrière-plan */}
         <div className="absolute inset-0 bg-[linear-gradient(90deg,rgba(6,182,212,0.05)_1px,transparent_1px),linear-gradient(rgba(6,182,212,0.05)_1px,transparent_1px)] bg-[size:20px_20px] opacity-20 z-10"></div>
         
-        {/* Chiffres binaires 0 et 1 flottants dans la nav bar */}
-        <div className="absolute inset-0 overflow-hidden pointer-events-none z-20">
-          <TeleportingBinaryDigits />
-        </div>
-        
         {/* Ligne lumineuse animée en haut */}
         <div className="absolute top-0 left-0 right-0 h-[1px] bg-gradient-to-r from-transparent via-cyan-400 to-transparent animate-pulse z-10"></div>
         
@@ -329,22 +162,6 @@ export const Navigation: React.FC = () => {
               <div className="absolute inset-1 rounded-3xl border border-purple-400/30 shadow-[0_0_20px_rgba(147,51,234,0.2)] group-hover:border-pink-400/50 group-hover:shadow-[0_0_30px_rgba(236,72,153,0.4)] transition-all duration-1000"></div>
               <div className="absolute inset-2 rounded-3xl border border-pink-400/20 shadow-[0_0_15px_rgba(236,72,153,0.15)] group-hover:border-cyan-400/40 group-hover:shadow-[0_0_25px_rgba(6,182,212,0.3)] transition-all duration-1000"></div>
               
-              {/* Particules flottantes dans le fond */}
-              <div className="absolute inset-0 overflow-hidden rounded-3xl">
-                {[...Array(2)].map((_, i) => (
-                  <div
-                    key={i}
-                    className="absolute w-1 h-1 bg-white rounded-full animate-ping opacity-40 group-hover:opacity-70 transition-opacity duration-1000"
-                    style={{
-                      top: `${Math.random() * 100}%`,
-                      left: `${Math.random() * 100}%`,
-                      animationDelay: `${Math.random() * 3}s`,
-                      animationDuration: `${2 + Math.random() * 2}s`
-                    }}
-                  />
-                ))}
-              </div>
-              
               {/* Effet de scan diagonal */}
               <div className="absolute inset-0 bg-gradient-to-br from-transparent via-white/10 to-transparent opacity-0 group-hover:opacity-100 transition-all duration-1000 animate-scan rounded-3xl transform rotate-12"></div>
               
@@ -364,22 +181,6 @@ export const Navigation: React.FC = () => {
                   ? 'bg-gradient-to-r from-red-400/20 via-pink-400/20 to-red-400/20' 
                   : 'bg-gradient-to-r from-cyan-400/20 via-purple-400/20 to-pink-400/20'
               }`}></div>
-              
-              {/* Effet de particules scintillantes */}
-              <div className="absolute inset-0 overflow-hidden rounded-3xl">
-                {[...Array(3)].map((_, i) => (
-                  <div
-                    key={i}
-                    className="absolute w-0.5 h-0.5 bg-white rounded-full animate-ping opacity-50 group-hover:opacity-90 transition-opacity duration-1000"
-                    style={{
-                      top: `${Math.random() * 100}%`,
-                      left: `${Math.random() * 100}%`,
-                      animationDelay: `${Math.random() * 2}s`,
-                      animationDuration: `${1.5 + Math.random() * 1.5}s`
-                    }}
-                  />
-                ))}
-              </div>
               
               {/* Icône Menu/Fermer avec effets multiples */}
               <div className="relative z-10">
@@ -415,15 +216,6 @@ export const Navigation: React.FC = () => {
                   <div className="absolute bottom-0 right-1/4 w-1/3 h-0.5 bg-gradient-to-r from-transparent via-cyan-300/90 to-transparent blur-sm opacity-30"></div>
                 </div>
               </div>
-              
-              {/* Particules orbitales autour du bouton */}
-              <div className={`absolute -top-2 -right-2 w-3 h-3 rounded-full animate-ping opacity-60 group-hover:opacity-90 transition-opacity duration-1000 ${
-                isMobileMenuOpen ? 'bg-red-400' : 'bg-cyan-400'
-              }`}></div>
-              <div className="absolute -bottom-2 -left-2 w-3 h-3 bg-purple-400 rounded-full animate-ping opacity-60 group-hover:opacity-90 transition-opacity duration-1000 animation-delay-300"></div>
-              <div className="absolute -top-2 -left-2 w-2 h-2 bg-pink-400 rounded-full animate-ping opacity-50 group-hover:opacity-80 transition-opacity duration-1000 animation-delay-500"></div>
-              <div className="absolute -bottom-2 -right-2 w-2 h-2 bg-yellow-400 rounded-full animate-ping opacity-50 group-hover:opacity-80 transition-opacity duration-1000 animation-delay-700"></div>
-              
               {/* Anneaux énergétiques qui s'étendent au hover */}
               <div className="absolute inset-0 rounded-full border-2 border-cyan-400/0 animate-pulse"></div>
               <div className="absolute inset-0 rounded-full border border-purple-400/0 animate-pulse animation-delay-300"></div>
@@ -455,11 +247,6 @@ export const Navigation: React.FC = () => {
         {/* Effet de grille futuriste en arrière-plan du menu étendu - identique à la nav bar */}
         <div className="absolute inset-0 bg-[linear-gradient(90deg,rgba(6,182,212,0.1)_1px,transparent_1px),linear-gradient(rgba(6,182,212,0.1)_1px,transparent_1px)] bg-[size:20px_20px] opacity-30"></div>
         
-        {/* Chiffres binaires 0 et 1 flottants dans l'espace-temps */}
-        <div className="absolute inset-0 overflow-hidden pointer-events-none z-0">
-          <TeleportingBinaryDigitsMenu />
-        </div>
-        
         {/* Contenu du menu avec les liens de navigation */}
         <div 
           className="h-full flex flex-col items-center justify-start p-4 sm:p-8 pt-24 sm:pt-32 pb-20 overflow-y-auto relative z-10"
@@ -482,22 +269,6 @@ export const Navigation: React.FC = () => {
               <div className="absolute inset-1 rounded-3xl border border-purple-400/30 shadow-[0_0_20px_rgba(147,51,234,0.2)]"></div>
               <div className="absolute inset-2 rounded-3xl border border-pink-400/20 shadow-[0_0_15px_rgba(236,72,153,0.15)]"></div>
               
-              {/* Particules flottantes dans le fond */}
-              <div className="absolute inset-0 overflow-hidden rounded-3xl">
-                {[...Array(3)].map((_, i) => (
-                  <div
-                    key={i}
-                    className="absolute w-1 h-1 bg-white rounded-full animate-ping opacity-40"
-                    style={{
-                      top: `${Math.random() * 100}%`,
-                      left: `${Math.random() * 100}%`,
-                      animationDelay: `${Math.random() * 4}s`,
-                      animationDuration: `${3 + Math.random() * 3}s`
-                    }}
-                  />
-                ))}
-              </div>
-              
               {/* Effet de scan diagonal */}
               <div className="absolute inset-0 bg-gradient-to-br from-transparent via-white/5 to-transparent opacity-0 group-hover:opacity-100 transition-all duration-1000 animate-scan rounded-3xl transform rotate-12"></div>
               
@@ -509,22 +280,6 @@ export const Navigation: React.FC = () => {
               
               {/* Fond lumineux animé */}
               <div className="absolute inset-0 bg-gradient-to-r from-cyan-400/30 via-purple-400/30 to-pink-400/30 rounded-3xl blur-2xl animate-pulse group-hover:blur-xl transition-all duration-1000"></div>
-              
-              {/* Effet de particules scintillantes */}
-              <div className="absolute inset-0 overflow-hidden rounded-3xl">
-                {[...Array(5)].map((_, i) => (
-                  <div
-                    key={i}
-                    className="absolute w-1 h-1 bg-white rounded-full animate-ping opacity-70"
-                    style={{
-                      top: `${Math.random() * 100}%`,
-                      left: `${Math.random() * 100}%`,
-                      animationDelay: `${Math.random() * 3}s`,
-                      animationDuration: `${2 + Math.random() * 2}s`
-                    }}
-                  />
-                ))}
-              </div>
               
               {/* Texte principal avec effets multiples */}
               <h2 className="relative z-10 text-3xl sm:text-5xl font-black mb-0 transform transition-all duration-1000 p-3 sm:p-8 rounded-3xl overflow-hidden">
@@ -561,22 +316,6 @@ export const Navigation: React.FC = () => {
               <div className="absolute inset-0 rounded-2xl border border-cyan-400/30 shadow-[0_0_20px_rgba(6,182,212,0.2)]"></div>
               <div className="absolute inset-1 rounded-2xl border border-purple-400/20 shadow-[0_0_15px_rgba(147,51,234,0.15)]"></div>
               
-              {/* Particules flottantes */}
-              <div className="absolute inset-0 overflow-hidden rounded-2xl">
-                {[...Array(4)].map((_, i) => (
-                  <div
-                    key={i}
-                    className="absolute w-1 h-1 bg-white rounded-full animate-ping opacity-30"
-                    style={{
-                      top: `${Math.random() * 100}%`,
-                      left: `${Math.random() * 100}%`,
-                      animationDelay: `${Math.random() * 4}s`,
-                      animationDuration: `${3 + Math.random() * 2}s`
-                    }}
-                  />
-                ))}
-              </div>
-              
               {/* Lueur externe pulsante */}
               <div className="absolute -inset-2 bg-gradient-to-r from-cyan-600/10 via-purple-600/10 to-pink-600/10 rounded-2xl blur-xl animate-pulse opacity-50"></div>
               
@@ -599,10 +338,6 @@ export const Navigation: React.FC = () => {
                 <div className="absolute top-2 left-1/4 w-1/2 h-0.5 bg-gradient-to-r from-transparent via-white/60 to-transparent blur-sm opacity-40"></div>
                 <div className="absolute bottom-2 right-1/4 w-1/3 h-0.5 bg-gradient-to-r from-transparent via-cyan-300/60 to-transparent blur-sm opacity-30"></div>
               </div>
-              
-              {/* Particules orbitales */}
-              <div className="absolute -top-1 -right-1 w-2 h-2 bg-cyan-400 rounded-full animate-ping opacity-60"></div>
-              <div className="absolute -bottom-1 -left-1 w-2 h-2 bg-purple-400 rounded-full animate-ping opacity-60 animation-delay-300"></div>
             </div>
           </div>
           
@@ -624,12 +359,6 @@ export const Navigation: React.FC = () => {
                 
                 {/* Effet de lueur */}
                 <div className={`absolute inset-0 bg-gradient-to-r ${item.glowFrom} ${item.glowTo} rounded-2xl sm:rounded-3xl opacity-0 group-hover:opacity-50 transition-all duration-300 sm:duration-700 blur-xl`}></div>
-                
-                {/* Particules animées */}
-                <div className="absolute inset-0 overflow-hidden rounded-2xl sm:rounded-3xl">
-                  <div className={`absolute -top-1 -right-1 w-3 h-3 ${item.dotColor} rounded-full animate-ping opacity-75`}></div>
-                  <div className={`absolute -bottom-1 -left-1 w-3 h-3 ${item.dotColor2} rounded-full animate-ping opacity-75 animation-delay-300`}></div>
-                </div>
                 
                 {/* Contenu */}
                 <div className="relative z-10">

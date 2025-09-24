@@ -6,7 +6,6 @@ import { LandingPage } from './pages/LandingPage';
 import { RelativityCalculatorPage } from './pages/RelativityCalculatorPage';
 import { BlackHoleConceptPage } from './pages/BlackHoleConceptPage';
 import { CodeUniversePage } from './pages/CodeUniversePage';
-import { GodCodesInBinaryPage } from './pages/GodCodesInBinaryPage';
 import { QuantumLabPage } from './pages/QuantumLabPage';
 import { ScaleLabPage } from './pages/ScaleLabPage';
 
@@ -25,7 +24,6 @@ const AppContent: React.FC = () => {
         <Route path="/code-univers" element={<CodeUniversePage />} />
         <Route path="/relativity" element={<RelativityCalculatorPage />} />
         <Route path="/black-hole-concept" element={<BlackHoleConceptPage />} />
-        <Route path="/god-binary" element={<GodCodesInBinaryPage />} />
         <Route path="/quantum-lab" element={<QuantumLabPage />} />
         <Route path="/scale-lab" element={<ScaleLabPage />} />
       </Routes>

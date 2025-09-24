@@ -192,26 +192,6 @@ export const Navigation: React.FC = () => {
       icon: '🌌'
     },
     {
-      path: '/god-binary',
-      title: 'Dieu code en Binaire',
-      shortTitle: 'Dieu code en Binaire',
-      gradient: 'from-yellow-500/20 to-orange-500/20',
-      hoverGradient: 'hover:from-yellow-500/10 hover:to-orange-500/10',
-      textColor: 'text-yellow-300',
-      hoverTextColor: 'hover:text-yellow-300',
-      borderColor: 'border-yellow-400/30',
-      hoverBorderColor: 'hover:border-yellow-400/20',
-      shadowColor: 'shadow-yellow-500/25',
-      hoverShadowColor: 'hover:shadow-yellow-500/20',
-      glowFrom: 'from-yellow-400/10',
-      glowTo: 'to-orange-400/10',
-      hoverGlowFrom: 'from-yellow-400/5',
-      hoverGlowTo: 'to-orange-400/5',
-      dotColor: 'bg-yellow-400',
-      dotColor2: 'bg-orange-400',
-      icon: '⚡'
-    },
-    {
       path: '/relativity',
       title: 'Relativité Restreinte',
       shortTitle: 'Relativité Restreinte',

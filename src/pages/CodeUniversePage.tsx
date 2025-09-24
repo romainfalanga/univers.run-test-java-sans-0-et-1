@@ -525,8 +525,8 @@ De la même façon, notre corps est constitué de molécules, elles-mêmes faite
                   <div className="space-y-3">
                     {[
                       { level: "Fonctions, Variables et Méthodes", desc: "Manipulations de milliards de milliards de Fonctions, Variables et Méthodes.", color: "bg-red-900/40 border-red-400" },
-                      { level: "Classes", desc: "Des milliards de Classes s'assemblent et définissent des structures nouvelles.", color: "bg-yellow-900/40 border-yellow-400" },
-                      { level: "Packages", desc: "Des centaines de millions de Packages organisent et relient les classes.", color: "bg-green-900/40 border-green-400" },
+                      { level: "Classes", desc: "Des milliards de Classes émergent de l'organisation des Fonctions, Variables et Méthoes et définissent des structures nouvelles.", color: "bg-yellow-900/40 border-yellow-400" },
+                      { level: "Packages", desc: "Des centaines de millions de Packages regroupent les Classes et structurent leur organisation.", color: "bg-green-900/40 border-green-400" },
                       { level: "Vues", desc: "Des millions de Vues se combinent.", color: "bg-blue-900/40 border-blue-400" },
                       { level: "Interface utilisateur", desc: "Un téléphone complet apparaît dans la réalité.", color: "bg-purple-900/40 border-purple-400" }
                     ].map((item, index) => (

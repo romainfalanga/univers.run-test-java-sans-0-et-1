@@ -129,7 +129,7 @@ export const Navigation: React.FC = () => {
         <div className="absolute bottom-0 left-0 right-0 h-[1px] bg-gradient-to-r from-transparent via-purple-400 to-transparent animate-pulse z-10"></div>
 
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex items-center justify-center py-4 sm:py-6 relative">
+          <div className="flex items-center justify-center py-2 sm:py-3 relative">
             
             {/* Bouton Menu Hamburger / Fermer - toujours présent */}
             <button
@@ -138,7 +138,7 @@ export const Navigation: React.FC = () => {
                 isMobileMenuOpen 
                   ? 'bg-gradient-to-r from-red-600/95 via-pink-600/95 to-red-600/95' 
                   : 'bg-gradient-to-r from-slate-900/95 via-purple-900/95 to-indigo-900/95'
-              }`}
+              } p-3 sm:p-4`}
             >
               {/* Fond principal avec gradient animé */}
               <div className={`absolute inset-0 rounded-3xl ${
@@ -187,17 +187,17 @@ export const Navigation: React.FC = () => {
                 <div className="relative">
                   {/* Icône principale - change selon l'état */}
                   {isMobileMenuOpen ? (
-                    <X className="w-8 h-8 sm:w-10 sm:h-10 relative z-10 drop-shadow-[0_0_15px_rgba(239,68,68,0.8)]" />
+                    <X className="w-6 h-6 sm:w-8 sm:h-8 relative z-10 drop-shadow-[0_0_15px_rgba(239,68,68,0.8)]" />
                   ) : (
-                    <Menu className="w-8 h-8 sm:w-10 sm:h-10 relative z-10 drop-shadow-[0_0_15px_rgba(6,182,212,0.8)]" />
+                    <Menu className="w-6 h-6 sm:w-8 sm:h-8 relative z-10 drop-shadow-[0_0_15px_rgba(6,182,212,0.8)]" />
                   )}
                   
                   {/* Effet de lueur externe sur l'icône */}
                   <div className="absolute inset-0 opacity-30 blur-sm">
                     {isMobileMenuOpen ? (
-                      <X className="w-8 h-8 sm:w-10 sm:h-10 text-red-400" />
+                      <X className="w-6 h-6 sm:w-8 sm:h-8 text-red-400" />
                     ) : (
-                      <Menu className="w-8 h-8 sm:w-10 sm:h-10 text-cyan-400" />
+                      <Menu className="w-6 h-6 sm:w-8 sm:h-8 text-cyan-400" />
                     )}
                   </div>
                   
@@ -249,7 +249,7 @@ export const Navigation: React.FC = () => {
         
         {/* Contenu du menu avec les liens de navigation */}
         <div 
-          className="h-full flex flex-col items-center justify-start p-4 sm:p-8 pt-24 sm:pt-32 pb-20 overflow-y-auto relative z-10"
+          className="h-full flex flex-col items-center justify-start p-4 sm:p-8 pt-20 sm:pt-28 pb-20 overflow-y-auto relative z-10"
           onClick={(e) => e.stopPropagation()}
         >
           {/* Titre "Menu de Dieu" intégré dans le contenu */}

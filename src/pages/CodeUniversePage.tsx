@@ -503,7 +503,7 @@ De la même façon, notre corps est constitué de molécules, elles-mêmes faite
                   
                   <div className="space-y-3">
                     {[
-                      { level: "Particules", desc: "Dieu manipule des milliards de milliards de fermions et de bosons", color: "bg-red-900/40 border-red-400" },
+                      { level: "Particules", desc: "Manipulation des milliards de milliards de fermions et de bosons", color: "bg-red-900/40 border-red-400" },
                       { level: "Nucléons", desc: "Des milliards de milliards de protons et neutrons se combinent", color: "bg-yellow-900/40 border-yellow-400" },
                       { level: "Atomes", desc: "Des centaines de milliards d'atomes acquièrent de nouvelles propriétés", color: "bg-green-900/40 border-green-400" },
                       { level: "Molécules", desc: "Des dizaines de milliards de molécules interagissent différemment", color: "bg-blue-900/40 border-blue-400" },
@@ -524,7 +524,7 @@ De la même façon, notre corps est constitué de molécules, elles-mêmes faite
                   
                   <div className="space-y-3">
                     {[
-                      { level: "0 et 1", desc: "Dieu manipule des milliards de milliards de 0 et de 1.", color: "bg-red-900/40 border-red-400" },
+                      { level: "Fonctions, variables méthoes", desc: "Manipulations de milliards de milliardsde lignes de cod.", color: "bg-red-900/40 border-red-400" },
                       { level: "Classes Java", desc: "Les classes Java prennent forme, définissant la structure et le comportement des objets à un niveau plus abstrait.", color: "bg-yellow-900/40 border-yellow-400" },
                       { level: "Objets Java", desc: "Les objets de la réalité s'assemblent, créant des instances concrètes et des fonctionnalités complexes.", color: "bg-green-900/40 border-green-400" },
                       { level: "Rendu UI Java", desc: "Le rendu de l'interface utilisateur Java est généré à partir des objets Java, définissant la structure et l'apparence visuelle du téléphone.", color: "bg-blue-900/40 border-blue-400" },

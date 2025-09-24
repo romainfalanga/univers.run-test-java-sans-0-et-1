@@ -322,9 +322,9 @@ export const CodeUniversePage: React.FC = () => {
                         color: "bg-purple-900/40 border-purple-400" 
                       },
                       { 
-                        level: "HTML/CSS", 
-                        desc: "L'HTML et le CSS décrivent la réalité et son fonctionnement", 
-                        connection: "→ L'HTML et le CSS sont généré par les composants Reacts",
+                        level: "Vue / Scène", 
+                        desc: "Un fragment de l’interface utilisateur fonctionnant avec sa propre logique", 
+                        connection: "→ Chaque vue est construite à partir de plusieurs packages.",
                         color: "bg-blue-900/40 border-blue-400" 
                       }
                     ].map((item, index) => (

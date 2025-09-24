@@ -475,13 +475,13 @@ De la même façon, notre corps est constitué de molécules, elles-mêmes faite
               
               <div className="space-y-4 sm:space-y-6 text-sm sm:text-base lg:text-lg text-gray-200 leading-relaxed">
                 <p>
-                  Si l'univers est fait de code informatique, son code source binaire se trouve à l'échelle des particules fondamentales. Modifier des 0 et 1 depuis cette échelle engendrerait les compilations couche par couche des échelles supérieures, jusqu'à modifier le rendu UI Java, ce qui modifierait ensuite l'interface utilisateur (notre échelle macroscopique).
+                  Si l'univers est fait de code informatique, modifier des variables, fonctions ou méthodes depuis cette échelle engendrerait les compilations couche par couche des échelles supérieures, jusqu'à modifier le rendu des vues, ce qui modifierait ensuite l'interface utilisateur (notre échelle macroscopique).
                 </p>
                 <p>
-                  Une entité capable de manipuler directement ces bits (particules fondamentales) pourrait, le temps d'une fraction de seconde, figer les probabilités de chaque échelle. Chaque objet et chaque ligne de code manipulée existeraient alors pleinement, avant de redevenir incertains l'instant suivant. L'interface utilisateur, elle, resterait stable, mais sous le capot, les échelles de la mécanique quantique retourneraient à leur état de probabilités.
+                  Une entité capable de manipuler directement des particules fondamentales, pourrait le temps d'une fraction de seconde, figer les probabilités de chaque échelle. Chaque classes, packages ou vues manipulées existeraient alors pleinement, avant de redevenir incertains l'instant suivant. L'interface utilisateur, elle, resterait stable, mais sous le capot, les échelles de la mécanique quantique retourneraient à leur état de probabilités.
                 </p>
                 <p>
-                  Une telle puissance permettrait de créer ce que l'on veut, mais à une échelle infiniment plus vaste. Dans l'exemple qui suit, nous allons voir la cascade des échelles inversée pour la création d'un téléphone.
+                  Une telle puissance permettrait de créer ce que l'on veut. Dans l'exemple qui suit, nous allons voir la cascade des échelles inversée pour la création d'un téléphone.
                 </p>
               </div>
             </div>

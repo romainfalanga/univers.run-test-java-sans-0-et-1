@@ -524,7 +524,7 @@ De la même façon, notre corps est constitué de molécules, elles-mêmes faite
                   
                   <div className="space-y-3">
                     {[
-                      { level: "Fonctions, variables méthoes", desc: "Manipulations de milliards de milliardsde lignes de cod.", color: "bg-red-900/40 border-red-400" },
+                      { level: "Fonctions, Variables et Méthodes", desc: "Manipulations de milliards de milliards de Fonctions, Variables Méthodes.", color: "bg-red-900/40 border-red-400" },
                       { level: "Classes Java", desc: "Les classes Java prennent forme, définissant la structure et le comportement des objets à un niveau plus abstrait.", color: "bg-yellow-900/40 border-yellow-400" },
                       { level: "Objets Java", desc: "Les objets de la réalité s'assemblent, créant des instances concrètes et des fonctionnalités complexes.", color: "bg-green-900/40 border-green-400" },
                       { level: "Rendu UI Java", desc: "Le rendu de l'interface utilisateur Java est généré à partir des objets Java, définissant la structure et l'apparence visuelle du téléphone.", color: "bg-blue-900/40 border-blue-400" },

@@ -6,7 +6,7 @@ export const CodeUniversePage: React.FC = () => {
   const location = useLocation();
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-slate-900 via-purple-900 to-indigo-900 relative overflow-hidden pt-16 sm:pt-20">
+    <div className="min-h-screen bg-gradient-to-br from-slate-900 via-purple-900 to-indigo-900 relative overflow-hidden pt-24 sm:pt-28">
       <div 
         className="min-h-screen relative z-10"
       >
@@ -17,7 +17,7 @@ export const CodeUniversePage: React.FC = () => {
         <div className="absolute inset-0 bg-[linear-gradient(45deg,transparent_25%,rgba(147,51,234,0.03)_50%,transparent_75%)] bg-[length:80px_80px] opacity-60 z-0 animate-pulse"></div>
         
         {/* Page d'introduction */}
-        <div className="w-full flex items-start justify-center p-4 sm:p-6 pt-4 relative z-20">
+        <div className="w-full flex items-start justify-center p-4 sm:p-6 pt-8 relative z-20">
           <div className="max-w-4xl mx-auto w-full text-center">
             
             {/* Titre principal */}

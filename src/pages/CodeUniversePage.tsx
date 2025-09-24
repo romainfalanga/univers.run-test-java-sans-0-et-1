@@ -414,21 +414,21 @@ De même, le JavaScript qui compose un composant React n'existe pas à l'avance 
                   </h3>
                   {[
                     {
-                      level: "Composants React",
-                      desc: "Composants de la réalité réutilisables qui permettent la création du l'HTML et du CSS",
-                      connection: "→ Logique et structure définies par le code JavaScript",
+                      level: "Package",
+                      desc: "Un regroupement de logiques réunies dans un même ensemble pour créer une logique plus grande",
+                      connection: "→ Chaque package est construit à partir de plusieurs classes.",
                       color: "bg-green-900/40 border-green-400"
                     },
                     {
-                      level: "JavaScript",
-                      desc: "Logique du fonctionnement de chaque composant codé en Java script",
-                      connection: "→ Java Script est fait de 0 et de 1, rendue lisible par des programmes",
+                      level: "Classe",
+                      desc: "Une structure qui définit l’état et les comportements d’un élément",
+                      connection: "→ Chaque classe est composée de méthodes, de fonctions et de variables",
                       color: "bg-yellow-900/40 border-yellow-400"
                     },
                     {
-                      level: "0 et 1 (Binaire)",
-                      desc: "Les informations élémentaires de la réalité compilés en 0 et 1.",
-                      connection: "→ C'est la brique ultime du code ",
+                      level: "Méthodes, Fonctions et Variables",
+                      desc: "Les méthodes ou fonctions décrivent des actions, les variables stockent des données",
+                      connection: "→ Ce sont les briques ultime",
                       color: "bg-orange-900/40 border-orange-400"
                     }
                   ].map((item, index) => (

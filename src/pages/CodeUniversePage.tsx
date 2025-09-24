@@ -522,7 +522,7 @@ De la même façon, notre corps est constitué de molécules, elles-mêmes faite
           </div>
         </div>
           {/* Section Modifier la Réalité */}
-          <div className="bg-gradient-to-r from-indigo-900/60 to-purple-900/50 backdrop-blur-sm rounded-xl p-4 sm:p-6 border-2 border-indigo-400/50 shadow-2xl mb-6 sm:mb-8 floating-card">
+          <div className="bg-gradient-to-r from-indigo-900/60 to-purple-900/50 backdrop-blur-sm rounded-xl lg:rounded-2xl p-4 sm:p-6 lg:p-8 border-2 border-indigo-400/50 shadow-2xl mb-6 sm:mb-8 floating-card">
             <div className="flex items-center mb-4 sm:mb-6">
               <Zap className="w-8 h-8 sm:w-10 sm:h-10 mr-3 sm:mr-4 text-indigo-400 animate-pulse" />
               <h2 className="text-xl sm:text-2xl lg:text-3xl font-black text-indigo-300">
@@ -544,7 +544,7 @@ De la même façon, notre corps est constitué de molécules, elles-mêmes faite
           </div>
 
           {/* La Cascade Inversée */}
-          <div className="bg-gradient-to-br from-emerald-900/60 to-teal-900/50 backdrop-blur-md rounded-2xl p-6 sm:p-8 border-2 border-emerald-400/50 shadow-2xl mb-6 sm:mb-8 floating-card glow-border-emerald">
+          <div className="bg-gradient-to-br from-emerald-900/60 to-teal-900/50 backdrop-blur-md rounded-xl lg:rounded-2xl p-4 sm:p-6 lg:p-8 border-2 border-emerald-400/50 shadow-2xl mb-6 sm:mb-8 floating-card glow-border-emerald">
             <div className="flex items-center mb-4 sm:mb-6">
               <Layers className="w-8 h-8 sm:w-10 sm:h-10 mr-3 sm:mr-4 text-emerald-400 animate-pulse" />
               <h2 className="text-xl sm:text-2xl lg:text-3xl font-black text-emerald-300 neon-text-emerald">
@@ -552,7 +552,7 @@ De la même façon, notre corps est constitué de molécules, elles-mêmes faite
               </h2>
             </div>
             
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-8">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-6">
               <div className="space-y-4">
                 <h3 className="text-lg sm:text-xl font-bold text-emerald-200 mb-4">
                   🌌 Cascade Universelle
@@ -598,7 +598,7 @@ De la même façon, notre corps est constitué de molécules, elles-mêmes faite
           </div>
 
           {/* L'Ultime Analogie */}
-          <div className="bg-gradient-to-br from-indigo-900/50 to-purple-900/40 backdrop-blur-sm rounded-xl p-4 sm:p-6 border-2 border-indigo-400/40 shadow-2xl text-center mb-6 sm:mb-8 floating-card">
+          <div className="bg-gradient-to-br from-indigo-900/50 to-purple-900/40 backdrop-blur-sm rounded-xl lg:rounded-2xl p-4 sm:p-6 lg:p-8 border-2 border-indigo-400/40 shadow-2xl text-center mb-6 sm:mb-8 floating-card">
             <h2 className="text-xl sm:text-2xl lg:text-3xl font-bold text-indigo-300 mb-4 sm:mb-6">
               L'Ultime Analogie
             </h2>

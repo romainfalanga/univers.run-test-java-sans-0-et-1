@@ -481,7 +481,7 @@ De la même façon, notre corps est constitué de molécules, elles-mêmes faite
                   Une entité capable de manipuler directement des particules fondamentales, pourrait le temps d'une fraction de seconde, figer les probabilités de chaque échelle. Chaque Classe, Package ou Vue modifié existerait alors pleinement, avant de redevenir incertain l'instant suivant. L'interface utilisateur, elle, resterait stable, mais sous le capot, les échelles de la mécanique quantique retourneraient à leur état de probabilités.
                 </p>
                 <p>
-                  Une telle puissance permettrait de créer ce que l'on veut. Dans l'exemple qui suit, nous allons voir la cascade des échelles inversée pour la création d'un téléphone.
+                  Une telle puissance permettrait de créer ce que l'on veut, à condition que ce que l'on souahite créer existe déjà dans l'univers. Dans l'exemple qui suit, nous allons voir la cascade des échelles inversée pour la création d'un téléphone.
                 </p>
               </div>
             </div>

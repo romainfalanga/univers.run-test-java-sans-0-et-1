@@ -318,7 +318,7 @@ export const CodeUniversePage: React.FC = () => {
                       { 
                         level: "Interface utilisateur", 
                         desc: "Ce que nous voyons : humains, objets, monde visible", 
-                        connection: "→ Rendu généré par la du HTML/CSS",
+                        connection: "→ Elle est composée de plusieurs vues.",
                         color: "bg-purple-900/40 border-purple-400" 
                       },
                       { 

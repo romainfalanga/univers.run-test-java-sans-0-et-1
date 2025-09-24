@@ -355,7 +355,7 @@ export const CodeUniversePage: React.FC = () => {
                     <strong className="text-cyan-300">Dans l'univers :</strong> à cette échelle, les entités physiques (atomes, électrons, particules) existent dans plusieurs états à la fois. Dans l'<strong className="text-purple-300">expérience de la double fente</strong>, par exemple, un électron ou un atome passe simultanément par les deux fentes, créant des interférences avec lui-même. Leur existence est une <strong className="text-yellow-300">probabilité</strong> diffuse jusqu'à ce qu'une observation ou une mesure "effondre" cette superposition en un état défini.
                   </p>
                   <p>
-                    <strong className="text-green-300">Dans l'application :</strong> En suivant cette logique, l'organisation des composants React qui produit le HTML et le CSS n'existe pas sous une forme unique et figée. Elle se déploie comme un ensemble de <strong className="text-yellow-300">probabilités</strong> d'agencements de composants possibles. Ce n'est qu'au moment où l'on observe cette organisation que les composants prennent une configuration particulière.
+                    <strong className="text-green-300">Dans le code :</strong> En suivant cette logique, l'organisation des composants React qui produit le HTML et le CSS n'existe pas sous une forme unique et figée. Elle se déploie comme un ensemble de <strong className="text-yellow-300">probabilités</strong> d'agencements de composants possibles. Ce n'est qu'au moment où l'on observe cette organisation que les composants prennent une configuration particulière.
 
 De même, le JavaScript qui compose un composant React n'existe pas à l'avance sous une seule écriture. Il est une <strong className="text-yellow-300">probabilité</strong> parmi une infinité de manières de produire le même rendu. Ce n'est qu'au moment où l'on "ouvre" le composant et que l'on regarde sous son capot que le code se matérialise dans une version précise, comme si l'acte d'observation faisait émerger une implémentation unique parmi toutes les possibilités.
                   </p>
@@ -428,7 +428,7 @@ De même, le JavaScript qui compose un composant React n'existe pas à l'avance 
                     {
                       level: "Méthodes, Fonctions et Variables",
                       desc: "Les méthodes ou fonctions décrivent des actions, les variables stockent des données",
-                      connection: "→ Ce sont les briques ultime",
+                      connection: "→ Ce sont les briques ultimes",
                       color: "bg-orange-900/40 border-orange-400"
                     }
                   ].map((item, index) => (

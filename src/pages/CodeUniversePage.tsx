@@ -145,7 +145,7 @@ export const CodeUniversePage: React.FC = () => {
                 Avant d'explorer les échelles qui composent la réalité, il faut comprendre qu'elles ne peuvent exister que parce qu'il y a un <strong className="text-white">cadre supérieur</strong> qui les contient et les rend possibles.
               </p>
               
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-6">
+              <div className="grid grid-cols-1 gap-4 sm:gap-6">
                 {/* Cadre Universel : Tissu de l'espace-temps */}
                 <div className="bg-gradient-to-r from-blue-900/40 to-cyan-900/30 backdrop-blur-sm rounded-xl p-4 sm:p-5 border border-blue-400/40 shadow-xl">
                   <div className="flex items-center mb-3 sm:mb-4">

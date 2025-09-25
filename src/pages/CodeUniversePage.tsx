@@ -17,7 +17,7 @@ export const CodeUniversePage: React.FC = () => {
       },
       computer: {
         level: "Interface utilisateur",
-        desc: "Ce que nous voyons : pages web, applications, interfaces",
+        desc: "Ce que nous voyons : humains, objets, monde visible",
         connection: "→ Elle est composée de l'ensemble des vues",
         color: "bg-purple-900/40 border-purple-400"
       }

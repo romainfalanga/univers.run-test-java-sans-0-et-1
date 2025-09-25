@@ -78,17 +78,17 @@ export const CodeUniversePage: React.FC = () => {
                   </div>
                 </div>
                 
-                {/* Cadre Informatique : Appareil électronique */}
+                {/* Cadre Informatique : Système d'exploitation */}
                 <div className="bg-gradient-to-r from-purple-900/40 to-indigo-900/30 backdrop-blur-sm rounded-xl p-4 sm:p-5 border border-purple-400/40 shadow-xl">
                   <div className="flex items-center mb-3 sm:mb-4">
                     <Cpu className="w-6 h-6 sm:w-8 sm:h-8 mr-2 sm:mr-3 text-purple-400" />
                     <h3 className="text-base sm:text-lg lg:text-xl font-bold text-purple-300">
-                      Le serveur
+                      Le Système d'exploitation
                     </h3>
                   </div>
                   <div className="space-y-3 sm:space-y-4 text-xs sm:text-sm lg:text-base text-gray-200 leading-relaxed">
                     <p className="font-medium">
-                      Le serveur est le cadre fondamental dans lequel le code prend forme. Il contient toutes les couches de la cascade informatique et maintient l'ensemble de la hierarchie, rendant possible l'existence de chaque niveau.
+                      Le Système d'exploitation est le cadre logiciel fondamental dans lequel le code prend vie et s'exécute. Il gère les ressources, unifie les composants et orchestre l'ensemble de la structure logicielle, assurant le fonctionnement de chaque niveau de la cascade informatique.
                     </p>
                   </div>
                 </div>
@@ -96,8 +96,7 @@ export const CodeUniversePage: React.FC = () => {
               
               <div className="mt-6 sm:mt-8 bg-gradient-to-r from-gray-900/60 to-slate-900/50 backdrop-blur-sm rounded-lg p-4 sm:p-6 border-l-4 border-gray-400">
                 <p className="text-xs sm:text-sm lg:text-base text-gray-200 leading-relaxed font-medium">
-                  <strong className="text-white">Point clé :</strong> Ces cadres supérieurs ne sont pas des "échelles" au sens où nous l'entendons dans la cascade qui suit. Ils sont les <strong className="text-gray-300">fondations</strong> qui permettent à toutes les échelles d'exister et d\'interagir. Dans l\'analogie, le tissu de l\'espace-temps et le serveur jouent le même rôle : ils sont les <strong className="text-gray-300">cadres universels</strong> qui contiennent, relient et font vivre l’ensemble de la structure.
-
+                  <strong className="text-white">Point clé :</strong> Ces cadres supérieurs ne sont pas des "échelles" au sens où nous l'entendons dans la cascade qui suit. Ils sont les <strong className="text-gray-300">fondations</strong> qui permettent à toutes les échelles d'exister et d\'interagir. Dans l\'analogie, le tissu de l\'espace-temps et le système d'exploitation jouent le même rôle : ils sont les <strong className="text-gray-300">cadres universels</strong> qui contiennent, relient et font vivre l'ensemble de la structure.
                 </p>
               </div>
             </div>
@@ -166,7 +165,7 @@ export const CodeUniversePage: React.FC = () => {
                       },
                       { 
                         level: "Vue / Scène", 
-                        desc: "Un fragment de l’interface utilisateur fonctionnant avec sa propre logique", 
+                        desc: "Un fragment de l'interface utilisateur fonctionnant avec sa propre logique", 
                         connection: "→ Chaque vue est construite à partir de plusieurs packages.",
                         color: "bg-blue-900/40 border-blue-400" 
                       }
@@ -264,7 +263,7 @@ De même, les classes qui composent un package n'existent pas à l\'avance sous 
                     },
                     {
                       level: "Classe",
-                      desc: "Une structure qui définit l’état et les comportements d’un élément",
+                      desc: "Une structure qui définit l'état et les comportements d'un élément",
                       connection: "→ Chaque classe est composée de méthodes, de fonctions et de variables",
                       color: "bg-yellow-900/40 border-yellow-400"
                     },
@@ -307,8 +306,8 @@ De la même façon, notre corps est constitué de molécules, elles-mêmes faite
                 </p>
               </div>
             </div>
-            {/* Section Modifier la Réalité */}
-
+          </div>
+        </div>
       </div>
     </div>
   );

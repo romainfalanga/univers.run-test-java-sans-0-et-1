@@ -120,7 +120,7 @@ export const CodeUniversePage: React.FC = () => {
                   </p>
                   
                   <p className="text-base sm:text-lg lg:text-xl text-gray-100 leading-relaxed font-medium">
-                    Chaque couche correspond à une échelle qui encapsule la suivante.
+                    Chaque échelle de l'univers correspond à une couche qui encapsule la suivante.
                   </p>
                   
                   <div className="bg-gradient-to-r from-yellow-900/40 to-amber-900/40 backdrop-blur-sm rounded-xl p-4 sm:p-5 border border-yellow-400/40 glow-border-yellow">

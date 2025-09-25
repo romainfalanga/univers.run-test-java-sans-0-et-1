@@ -32,7 +32,7 @@ export const CodeUniversePage: React.FC = () => {
       },
       computer: {
         level: "Vues",
-        desc: "Un fragment de l’interface utilisateur fonctionnant avec sa propre logique",
+        desc: "Un fragment de l'interface utilisateur fonctionnant avec sa propre logique",
         connection: "→ Chaque vue est construite à partir de plusieurs packages",
         color: "bg-blue-900/40 border-blue-400"
       }
@@ -66,7 +66,7 @@ export const CodeUniversePage: React.FC = () => {
       },
       computer: {
         level: "Classes",
-        desc: "Structure qui définit l’état et les comportements d’un élément",
+        desc: "Structure qui définit l'état et les comportements d'un élément",
         connection: "→ Chaque classe est composée de fonctions et de variables",
         color: "bg-yellow-900/40 border-yellow-400"
       }
@@ -179,7 +179,7 @@ export const CodeUniversePage: React.FC = () => {
               
               <div className="mt-6 sm:mt-8 bg-gradient-to-r from-gray-900/60 to-slate-900/50 backdrop-blur-sm rounded-lg p-4 sm:p-6 border-l-4 border-gray-400">
                 <p className="text-xs sm:text-sm lg:text-base text-gray-200 leading-relaxed font-medium">
-                  <strong className="text-white">Point clé :</strong> Ces cadres supérieurs ne sont pas des "échelles" au sens où nous l'entendons dans la cascade qui suit. Ils sont les <strong className="text-gray-300">fondations</strong> qui permettent à toutes les échelles d'exister et d\'interagir. Dans l'analogie, le tissu de l\'espace-temps et le système d'exploitation jouent le même rôle : ils sont les <strong className="text-gray-300">cadres universels</strong> qui contiennent, relient et font vivre l\'ensemble de la structure.
+                  <strong className="text-white">Point clé :</strong> Ces cadres supérieurs ne sont pas des "échelles" au sens où nous l'entendons dans la cascade qui suit. Ils sont les <strong className="text-gray-300">fondations</strong> qui permettent à toutes les échelles d'exister et d\'interagir. Dans l\'analogie, le tissu de l\'espace-temps et le système d\'exploitation jouent le même rôle : ils sont les <strong className="text-gray-300">cadres universels</strong> qui contiennent, relient et font vivre l\'ensemble de la structure.
                 </p>
               </div>
             </div>
@@ -285,9 +285,9 @@ export const CodeUniversePage: React.FC = () => {
                     <strong className="text-cyan-300">Dans l'univers :</strong> à cette échelle, les entités physiques (atomes, électrons, particules) existent dans plusieurs états à la fois. Dans l'<strong className="text-purple-300">expérience de la double fente</strong>, par exemple, un électron ou un atome passe simultanément par les deux fentes, créant des interférences avec lui-même. Leur existence est une <strong className="text-yellow-300">probabilité</strong> diffuse jusqu'à ce qu\'une observation ou une mesure "effondre" cette superposition en un état défini.
                   </p>
                   <p>
-                    <strong className="text-green-300">Dans le code :</strong> En suivant cette logique, l'organisation des packages qui produisent les vues n'existe pas sous une forme unique et figée. Elle se déploie comme un ensemble de <strong className="text-yellow-300">probabilités</strong> d'agencements de packages possibles. Ce n\'est qu'au moment où l\'on observe cette organisation que les packages prennent une configuration particulière.
+                    <strong className="text-green-300">Dans le code :</strong> En suivant cette logique, l'organisation des packages qui produisent les vues n'existe pas sous une forme unique et figée. Elle se déploie comme un ensemble de <strong className="text-yellow-300">probabilités</strong> d'agencements de packages possibles. Ce n\'est qu\'au moment où l\'on observe cette organisation que les packages prennent une configuration particulière.
 
-De même, les classes qui composent un package n'existent pas à l\'avance sous une seule écriture. Ils sont une <strong className="text-yellow-300">probabilité</strong> parmi une infinité de manières de produire le même rendu. Ce n'est qu'au moment où l'on \"ouvre" le package et que l'on regarde sous son capot que le code se matérialise dans une version précise, comme si l\'acte d'observation faisait émerger une implémentation unique parmi toutes les possibilités.
+De même, les classes qui composent un package n'existent pas à l\'avance sous une seule écriture. Ils sont une <strong className="text-yellow-300">probabilité</strong> parmi une infinité de manières de produire le même rendu. Ce n\'est qu\'au moment où l\'on \"ouvre\" le package et que l\'on regarde sous son capot que le code se matérialise dans une version précise, comme si l\'acte d\'observation faisait émerger une implémentation unique parmi toutes les possibilités.
                   </p>
                 </div>
               </div>
@@ -347,6 +347,10 @@ De même, les classes qui composent un package n'existent pas à l\'avance sous 
               <div className="mt-4 sm:mt-6 bg-gradient-to-r from-cyan-900/40 to-blue-900/30 backdrop-blur-sm rounded-lg p-3 sm:p-4 border-l-4 border-cyan-400">
                 <p className="text-xs sm:text-sm lg:text-base text-cyan-100 leading-relaxed font-medium">
                 <strong className="text-cyan-300">Chaque couche encapsule la suivante :</strong> L'interface utilisateur que nous voyons est générée à partir des vues, elles-mêmes issues de packages, résultant de classes qui sont faites de fonctions et variables.
+                
+                De la même façon, notre échelle macroscopique est constitué de molécules, elles-mêmes faites d'atomes, formés de nucléons, composés de particules fondamentales.
+                </p>
+              </div>
 
               {/* Mobile Layout - Échelles quantiques */}
               <div className="grid md:hidden grid-cols-1 gap-4 sm:gap-6">
@@ -385,11 +389,16 @@ De même, les classes qui composent un package n'existent pas à l\'avance sous 
                   </div>
                 ))}
               </div>
-              
-De la même façon, notre échelle macroscopique est constitué de molécules, elles-mêmes faites d'atomes, formés de nucléons, composés de particules fondamentales.
-                </p>
-              </div>
             </div>
+          </div>
+          
+          {/* Conclusion finale - déplacée en bas de la page */}
+          <div className="mt-6 sm:mt-8 bg-gradient-to-r from-cyan-900/40 to-blue-900/30 backdrop-blur-sm rounded-lg p-3 sm:p-4 border-l-4 border-cyan-400">
+            <p className="text-xs sm:text-sm lg:text-base text-cyan-100 leading-relaxed font-medium">
+              <strong className="text-cyan-300">Chaque couche encapsule la suivante :</strong> L'interface utilisateur que nous voyons est générée à partir des vues, elles-mêmes issues de packages, résultant de classes qui sont faites de fonctions et variables.
+              
+              De la même façon, notre échelle macroscopique est constitué de molécules, elles-mêmes faites d'atomes, formés de nucléons, composés de particules fondamentales.
+            </p>
           </div>
         </div>
       </div>

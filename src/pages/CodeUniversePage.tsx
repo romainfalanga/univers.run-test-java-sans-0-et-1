@@ -110,78 +110,130 @@ export const CodeUniversePage: React.FC = () => {
                 </h2>
               </div>
               
+              {/* Données pour les cascades alignées */}
+              {(() => {
+                // Cascades "classiques" observables
+                const pairedClassicalCascadeItems = [
+                  {
+                    universal: { 
+                      level: "Échelle macroscopique", 
+                      scale: "10<sup>-4</sup> m à 1 m", 
+                      desc: "Ce que nous voyons : humains, objets, monde visible", 
+                      connection: "→ Formé par l'assemblage de milliards de molécules organisées",
+                      color: "bg-purple-900/40 border-purple-400" 
+                    },
+                    computer: { 
+                      level: "Interface utilisateur", 
+                      desc: "Ce que nous voyons : humains, objets, monde visible", 
+                      connection: "→ Elle est composée de plusieurs vues.",
+                      color: "bg-purple-900/40 border-purple-400" 
+                    }
+                  },
+                  {
+                    universal: { 
+                      level: "Échelle moléculaire", 
+                      scale: "10<sup>-9</sup> à 10<sup>-6</sup> m", 
+                      desc: "Assemblages d'atomes : ADN, protéines, matériaux", 
+                      connection: "→ Propriétés émergentes par liaison d'atomes spécifiques",
+                      color: "bg-blue-900/40 border-blue-400" 
+                    },
+                    computer: { 
+                      level: "Vue / Scène", 
+                      desc: "Un fragment de l'interface utilisateur fonctionnant avec sa propre logique", 
+                      connection: "→ Chaque vue est construite à partir de plusieurs packages.",
+                      color: "bg-blue-900/40 border-blue-400" 
+                    }
+                  }
+                ];
+
+                // Cascades en "superposition quantique"
+                const pairedQuantumCascadeItems = [
+                  {
+                    universal: {
+                      level: "Échelle atomique",
+                      scale: "10<sup>-10</sup> m",
+                      desc: "Briques de la matière en superposition quantique : hydrogène, carbone, fer",
+                      connection: "→ Formés par l'assemblage de protons, neutrons et électrons",
+                      color: "bg-green-900/40 border-green-400"
+                    },
+                    computer: {
+                      level: "Package",
+                      desc: "Un regroupement de logiques réunies dans un même ensemble pour créer une logique plus grande",
+                      connection: "→ Chaque package est construit à partir de plusieurs classes.",
+                      color: "bg-green-900/40 border-green-400"
+                    }
+                  },
+                  {
+                    universal: {
+                      level: "Échelle nucléaire",
+                      scale: "10<sup>-15</sup> m",
+                      desc: "Cœur des atomes révélé par observation : protons et neutrons",
+                      connection: "→ Constitués de quarks liés par des gluons",
+                      color: "bg-yellow-900/40 border-yellow-400"
+                    },
+                    computer: {
+                      level: "Classe",
+                      desc: "Une structure qui définit l'état et les comportements d'un élément",
+                      connection: "→ Chaque classe est composée de méthodes, de fonctions et de variables",
+                      color: "bg-yellow-900/40 border-yellow-400"
+                    }
+                  },
+                  {
+                    universal: {
+                      level: "Échelle des particules fondamentales",
+                      scale: "10<sup>-18</sup> m",
+                      desc: "Constituants ultimes révélés par mesure : quarks, leptons, bosons",
+                      connection: "→ Révélées comme briques ultimes",
+                      color: "bg-orange-900/40 border-orange-400"
+                    },
+                    computer: {
+                      level: "Méthodes, Fonctions et Variables",
+                      desc: "Les méthodes ou fonctions décrivent des actions, les variables stockent des données",
+                      connection: "→ Ce sont les briques ultimes",
+                      color: "bg-orange-900/40 border-orange-400"
+                    }
+                  }
+                ];
+
               {/* Première partie : Échelles "classiques" observables */}
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-6 mb-6">
-                <div className="space-y-3">
-                  <h3 className="text-base sm:text-lg font-bold text-emerald-200 mb-3 sm:mb-4">
-                   🌌 Cascade Universelle
-                  </h3>
-                  
-                  <div className="space-y-2 sm:space-y-3">
-                    {[
-                      { 
-                        level: "Échelle macroscopique", 
-                        scale: "10<sup>-4</sup> m à 1 m", 
-                        desc: "Ce que nous voyons : humains, objets, monde visible", 
-                        connection: "→ Formé par l'assemblage de milliards de molécules organisées",
-                        color: "bg-purple-900/40 border-purple-400" 
-                      },
-                      { 
-                        level: "Échelle moléculaire", 
-                        scale: "10<sup>-9</sup> à 10<sup>-6</sup> m", 
-                        desc: "Assemblages d'atomes : ADN, protéines, matériaux", 
-                        connection: "→ Propriétés émergentes par liaison d'atomes spécifiques",
-                        color: "bg-blue-900/40 border-blue-400" 
-                      }
-                    ].map((item, index) => (
-                      <div key={index} className={`p-2 sm:p-3 rounded-lg border-l-4 ${item.color} min-h-[60px] sm:min-h-[70px] flex flex-col justify-center`}>
-                        <div className="font-bold text-white text-xs sm:text-sm">
-                          {item.level}
-                          <span className="text-cyan-300 font-mono ml-2" dangerouslySetInnerHTML={{ __html: item.scale }}></span>
-                        </div>
-                        <div className="text-gray-300 text-xs mt-1">{item.desc}</div>
-                        {item.connection && (
-                          <div className="text-yellow-200 text-xs mt-1 italic font-medium">
-                            {item.connection}
-                          </div>
-                        )}
-                      </div>
-                    ))}
-                  </div>
-                </div>
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-6 mb-6 items-stretch">
+                {/* Titres */}
+                <h3 className="text-base sm:text-lg font-bold text-emerald-200 mb-3 sm:mb-4">
+                 🌌 Cascade Universelle
+                </h3>
+                <h3 className="text-base sm:text-lg font-bold text-emerald-200 mb-3 sm:mb-4">
+                 💻 Cascade Informatique
+                </h3>
                 
-                <div className="space-y-3">
-                  <h3 className="text-base sm:text-lg font-bold text-emerald-200 mb-3 sm:mb-4">
-                   💻 Cascade Informatique
-                  </h3>
-                  
-                  <div className="space-y-2 sm:space-y-3">
-                    {[
-                      { 
-                        level: "Interface utilisateur", 
-                        desc: "Ce que nous voyons : humains, objets, monde visible", 
-                        connection: "→ Elle est composée de plusieurs vues.",
-                        color: "bg-purple-900/40 border-purple-400" 
-                      },
-                      { 
-                        level: "Vue / Scène", 
-                        desc: "Un fragment de l'interface utilisateur fonctionnant avec sa propre logique", 
-                        connection: "→ Chaque vue est construite à partir de plusieurs packages.",
-                        color: "bg-blue-900/40 border-blue-400" 
-                      }
-                    ].map((item, index) => (
-                      <div key={index} className={`p-2 sm:p-3 rounded-lg border-l-4 ${item.color} min-h-[60px] sm:min-h-[70px] flex flex-col justify-center`}>
-                        <div className="font-bold text-white text-xs sm:text-sm">{item.level}</div>
-                        <div className="text-gray-300 text-xs mt-1">{item.desc}</div>
-                        {item.connection && (
-                          <div className="text-yellow-200 text-xs mt-1 italic font-medium">
-                            {item.connection}
-                          </div>
-                        )}
+                {/* Items alignés par paires */}
+                {pairedClassicalCascadeItems.map((pair, index) => (
+                  <React.Fragment key={index}>
+                    {/* Item universel */}
+                    <div className={`p-2 sm:p-3 rounded-lg border-l-4 ${pair.universal.color} flex flex-col justify-center mb-2 sm:mb-3`}>
+                      <div className="font-bold text-white text-xs sm:text-sm">
+                        {pair.universal.level}
+                        {pair.universal.scale && <span className="text-cyan-300 font-mono ml-2" dangerouslySetInnerHTML={{ __html: pair.universal.scale }}></span>}
                       </div>
-                    ))}
-                  </div>
-                </div>
+                      <div className="text-gray-300 text-xs mt-1">{pair.universal.desc}</div>
+                      {pair.universal.connection && (
+                        <div className="text-yellow-200 text-xs mt-1 italic font-medium">
+                          {pair.universal.connection}
+                        </div>
+                      )}
+                    </div>
+                    
+                    {/* Item informatique */}
+                    <div className={`p-2 sm:p-3 rounded-lg border-l-4 ${pair.computer.color} flex flex-col justify-center mb-2 sm:mb-3`}>
+                      <div className="font-bold text-white text-xs sm:text-sm">{pair.computer.level}</div>
+                      <div className="text-gray-300 text-xs mt-1">{pair.computer.desc}</div>
+                      {pair.computer.connection && (
+                        <div className="text-yellow-200 text-xs mt-1 italic font-medium">
+                          {pair.computer.connection}
+                        </div>
+                      )}
+                    </div>
+                  </React.Fragment>
+                ))}
               </div>
 
               {/* Paragraphe de transition : Superposition Quantique */}
@@ -205,87 +257,48 @@ De même, les classes qui composent un package n'existent pas à l\'avance sous 
               </div>
 
               {/* Deuxième partie : Échelles en "superposition quantique" */}
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-6">
-                {/* Cascade Universelle (Physique) - Suite */}
-                <div className="space-y-3">
-                  <h3 className="text-base sm:text-lg font-bold text-emerald-200 mb-3 sm:mb-4">
-                   🌌 Cascade Universelle (Suite)
-                  </h3>
-                  {[
-                    {
-                      level: "Échelle atomique",
-                      scale: "10<sup>-10</sup> m",
-                      desc: "Briques de la matière en superposition quantique : hydrogène, carbone, fer",
-                      connection: "→ Formés par l'assemblage de protons, neutrons et électrons",
-                      color: "bg-green-900/40 border-green-400"
-                    },
-                    {
-                      level: "Échelle nucléaire",
-                      scale: "10<sup>-15</sup> m",
-                      desc: "Cœur des atomes révélé par observation : protons et neutrons",
-                      connection: "→ Constitués de quarks liés par des gluons",
-                      color: "bg-yellow-900/40 border-yellow-400"
-                    },
-                    {
-                      level: "Échelle des particules fondamentales",
-                      scale: "10<sup>-18</sup> m",
-                      desc: "Constituants ultimes révélés par mesure : quarks, leptons, bosons",
-                      connection: "→ Révélées comme briques ultimes",
-                      color: "bg-orange-900/40 border-orange-400"
-                    }
-                  ].map((item, index) => (
-                    <div key={index} className={`p-2 sm:p-3 rounded-lg border-l-4 ${item.color} min-h-[60px] sm:min-h-[70px] flex flex-col justify-center mb-2 sm:mb-3`}>
-                      <div className="font-bold text-white text-xs sm:text-sm">
-                        {item.level}
-                        {item.scale && <span className="text-cyan-300 font-mono ml-2" dangerouslySetInnerHTML={{ __html: item.scale }}></span>}
-                      </div>
-                      <div className="text-gray-300 text-xs mt-1">{item.desc}</div>
-                      {item.connection && (
-                        <div className="text-yellow-200 text-xs mt-1 italic font-medium">
-                          {item.connection}
-                        </div>
-                      )}
-                    </div>
-                  ))}
-                </div>
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-6 items-stretch">
+                {/* Titres */}
+                <h3 className="text-base sm:text-lg font-bold text-emerald-200 mb-3 sm:mb-4">
+                 🌌 Cascade Universelle (Suite)
+                </h3>
+                <h3 className="text-base sm:text-lg font-bold text-emerald-200 mb-3 sm:mb-4">
+                 💻 Cascade Informatique (Suite)
+                </h3>
                 
-                {/* Cascade Informatique (Logicielle) - Suite */}
-                <div className="space-y-3">
-                  <h3 className="text-base sm:text-lg font-bold text-emerald-200 mb-3 sm:mb-4">
-                   💻 Cascade Informatique (Suite)
-                  </h3>
-                  {[
-                    {
-                      level: "Package",
-                      desc: "Un regroupement de logiques réunies dans un même ensemble pour créer une logique plus grande",
-                      connection: "→ Chaque package est construit à partir de plusieurs classes.",
-                      color: "bg-green-900/40 border-green-400"
-                    },
-                    {
-                      level: "Classe",
-                      desc: "Une structure qui définit l'état et les comportements d'un élément",
-                      connection: "→ Chaque classe est composée de méthodes, de fonctions et de variables",
-                      color: "bg-yellow-900/40 border-yellow-400"
-                    },
-                    {
-                      level: "Méthodes, Fonctions et Variables",
-                      desc: "Les méthodes ou fonctions décrivent des actions, les variables stockent des données",
-                      connection: "→ Ce sont les briques ultimes",
-                      color: "bg-orange-900/40 border-orange-400"
-                    }
-                  ].map((item, index) => (
-                    <div key={index} className={`p-2 sm:p-3 rounded-lg border-l-4 ${item.color} min-h-[60px] sm:min-h-[70px] flex flex-col justify-center mb-2 sm:mb-3`}>
-                      <div className="font-bold text-white text-xs sm:text-sm">{item.level}</div>
-                      <div className="text-gray-300 text-xs mt-1">{item.desc}</div>
-                      {item.connection && (
+                {/* Items alignés par paires */}
+                {pairedQuantumCascadeItems.map((pair, index) => (
+                  <React.Fragment key={index}>
+                    {/* Item universel */}
+                    <div className={`p-2 sm:p-3 rounded-lg border-l-4 ${pair.universal.color} flex flex-col justify-center mb-2 sm:mb-3`}>
+                      <div className="font-bold text-white text-xs sm:text-sm">
+                        {pair.universal.level}
+                        {pair.universal.scale && <span className="text-cyan-300 font-mono ml-2" dangerouslySetInnerHTML={{ __html: pair.universal.scale }}></span>}
+                      </div>
+                      <div className="text-gray-300 text-xs mt-1">{pair.universal.desc}</div>
+                      {pair.universal.connection && (
                         <div className="text-yellow-200 text-xs mt-1 italic font-medium">
-                          {item.connection}
+                          {pair.universal.connection}
                         </div>
                       )}
                     </div>
-                  ))}
-                </div>
+                    
+                    {/* Item informatique */}
+                    <div className={`p-2 sm:p-3 rounded-lg border-l-4 ${pair.computer.color} flex flex-col justify-center mb-2 sm:mb-3`}>
+                      <div className="font-bold text-white text-xs sm:text-sm">{pair.computer.level}</div>
+                      <div className="text-gray-300 text-xs mt-1">{pair.computer.desc}</div>
+                      {pair.computer.connection && (
+                        <div className="text-yellow-200 text-xs mt-1 italic font-medium">
+                          {pair.computer.connection}
+                        </div>
+                      )}
+                    </div>
+                  </React.Fragment>
+                ))}
               </div>
+              
+              return null; // Cette fonction ne retourne rien, elle sert juste à définir les données
+            })()}
               
               {/* Échelle de Planck - section séparée */}
               <div className="mt-4 sm:mt-6">

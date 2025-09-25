@@ -194,40 +194,81 @@ export const CodeUniversePage: React.FC = () => {
               </div>
               
               {/* Première partie : Échelles "classiques" observables */}
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-6 mb-6 items-stretch">
-                {/* Headers */}
+              {/* Desktop Layout - Échelles classiques */}
+              <div className="hidden md:grid">
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-6 mb-6 items-stretch">
+                  {/* Headers */}
+                  <h3 className="text-base sm:text-lg font-bold text-emerald-200 mb-3 sm:mb-4">
+                   🌌 Cascade Universelle
+                  </h3>
+                  <h3 className="text-base sm:text-lg font-bold text-emerald-200 mb-3 sm:mb-4">
+                   💻 Cascade Informatique
+                  </h3>
+                  
+                  {/* Paired items */}
+                  {pairedClassicalCascadeItems.map((pair, index) => (
+                    <React.Fragment key={index}>
+                      <div className={`p-2 sm:p-3 rounded-lg border-l-4 ${pair.universal.color} flex flex-col justify-center`}>
+                        <div className="font-bold text-white text-xs sm:text-sm">
+                          {pair.universal.level}
+                          <span className="text-cyan-300 font-mono ml-2" dangerouslySetInnerHTML={{ __html: pair.universal.scale }}></span>
+                        </div>
+                        <div className="text-gray-300 text-xs mt-1">{pair.universal.desc}</div>
+                        {pair.universal.connection && (
+                          <div className="text-yellow-200 text-xs mt-1 italic font-medium">
+                            {pair.universal.connection}
+                          </div>
+                        )}
+                      </div>
+                      <div className={`p-2 sm:p-3 rounded-lg border-l-4 ${pair.computer.color} flex flex-col justify-center`}>
+                        <div className="font-bold text-white text-xs sm:text-sm">{pair.computer.level}</div>
+                        <div className="text-gray-300 text-xs mt-1">{pair.computer.desc}</div>
+                        {pair.computer.connection && (
+                          <div className="text-yellow-200 text-xs mt-1 italic font-medium">
+                            {pair.computer.connection}
+                          </div>
+                        )}
+                      </div>
+                    </React.Fragment>
+                  ))}
+                </div>
+              </div>
+
+              {/* Mobile Layout - Échelles classiques */}
+              <div className="grid md:hidden grid-cols-1 gap-4 sm:gap-6 mb-6">
+                {/* Cascade Universelle */}
                 <h3 className="text-base sm:text-lg font-bold text-emerald-200 mb-3 sm:mb-4">
                  🌌 Cascade Universelle
                 </h3>
+                {pairedClassicalCascadeItems.map((pair, index) => (
+                  <div key={`universal-${index}`} className={`p-2 sm:p-3 rounded-lg border-l-4 ${pair.universal.color} flex flex-col justify-center`}>
+                    <div className="font-bold text-white text-xs sm:text-sm">
+                      {pair.universal.level}
+                      <span className="text-cyan-300 font-mono ml-2" dangerouslySetInnerHTML={{ __html: pair.universal.scale }}></span>
+                    </div>
+                    <div className="text-gray-300 text-xs mt-1">{pair.universal.desc}</div>
+                    {pair.universal.connection && (
+                      <div className="text-yellow-200 text-xs mt-1 italic font-medium">
+                        {pair.universal.connection}
+                      </div>
+                    )}
+                  </div>
+                ))}
+                
+                {/* Cascade Informatique */}
                 <h3 className="text-base sm:text-lg font-bold text-emerald-200 mb-3 sm:mb-4">
                  💻 Cascade Informatique
                 </h3>
-                
-                {/* Paired items */}
                 {pairedClassicalCascadeItems.map((pair, index) => (
-                  <React.Fragment key={index}>
-                    <div className={`p-2 sm:p-3 rounded-lg border-l-4 ${pair.universal.color} flex flex-col justify-center`}>
-                      <div className="font-bold text-white text-xs sm:text-sm">
-                        {pair.universal.level}
-                        <span className="text-cyan-300 font-mono ml-2" dangerouslySetInnerHTML={{ __html: pair.universal.scale }}></span>
+                  <div key={`computer-${index}`} className={`p-2 sm:p-3 rounded-lg border-l-4 ${pair.computer.color} flex flex-col justify-center`}>
+                    <div className="font-bold text-white text-xs sm:text-sm">{pair.computer.level}</div>
+                    <div className="text-gray-300 text-xs mt-1">{pair.computer.desc}</div>
+                    {pair.computer.connection && (
+                      <div className="text-yellow-200 text-xs mt-1 italic font-medium">
+                        {pair.computer.connection}
                       </div>
-                      <div className="text-gray-300 text-xs mt-1">{pair.universal.desc}</div>
-                      {pair.universal.connection && (
-                        <div className="text-yellow-200 text-xs mt-1 italic font-medium">
-                          {pair.universal.connection}
-                        </div>
-                      )}
-                    </div>
-                    <div className={`p-2 sm:p-3 rounded-lg border-l-4 ${pair.computer.color} flex flex-col justify-center`}>
-                      <div className="font-bold text-white text-xs sm:text-sm">{pair.computer.level}</div>
-                      <div className="text-gray-300 text-xs mt-1">{pair.computer.desc}</div>
-                      {pair.computer.connection && (
-                        <div className="text-yellow-200 text-xs mt-1 italic font-medium">
-                          {pair.computer.connection}
-                        </div>
-                      )}
-                    </div>
-                  </React.Fragment>
+                    )}
+                  </div>
                 ))}
               </div>
 
@@ -252,41 +293,44 @@ De même, les classes qui composent un package n'existent pas à l'avance sous u
               </div>
 
               {/* Deuxième partie : Échelles en "superposition quantique" */}
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-6 items-stretch">
-                {/* Headers */}
-                <h3 className="text-base sm:text-lg font-bold text-emerald-200 mb-3 sm:mb-4">
-                 🌌 Cascade Universelle (Suite)
-                </h3>
-                <h3 className="text-base sm:text-lg font-bold text-emerald-200 mb-3 sm:mb-4">
-                 💻 Cascade Informatique (Suite)
-                </h3>
-                
-                {/* Paired items */}
-                {pairedQuantumCascadeItems.map((pair, index) => (
-                  <React.Fragment key={index}>
-                    <div className={`p-2 sm:p-3 rounded-lg border-l-4 ${pair.universal.color} flex flex-col justify-center`}>
-                      <div className="font-bold text-white text-xs sm:text-sm">
-                        {pair.universal.level}
-                        {pair.universal.scale && <span className="text-cyan-300 font-mono ml-2" dangerouslySetInnerHTML={{ __html: pair.universal.scale }}></span>}
+              {/* Desktop Layout - Échelles quantiques */}
+              <div className="hidden md:grid">
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-6 items-stretch">
+                  {/* Headers */}
+                  <h3 className="text-base sm:text-lg font-bold text-emerald-200 mb-3 sm:mb-4">
+                   🌌 Cascade Universelle (Suite)
+                  </h3>
+                  <h3 className="text-base sm:text-lg font-bold text-emerald-200 mb-3 sm:mb-4">
+                   💻 Cascade Informatique (Suite)
+                  </h3>
+                  
+                  {/* Paired items */}
+                  {pairedQuantumCascadeItems.map((pair, index) => (
+                    <React.Fragment key={index}>
+                      <div className={`p-2 sm:p-3 rounded-lg border-l-4 ${pair.universal.color} flex flex-col justify-center`}>
+                        <div className="font-bold text-white text-xs sm:text-sm">
+                          {pair.universal.level}
+                          {pair.universal.scale && <span className="text-cyan-300 font-mono ml-2" dangerouslySetInnerHTML={{ __html: pair.universal.scale }}></span>}
+                        </div>
+                        <div className="text-gray-300 text-xs mt-1">{pair.universal.desc}</div>
+                        {pair.universal.connection && (
+                          <div className="text-yellow-200 text-xs mt-1 italic font-medium">
+                            {pair.universal.connection}
+                          </div>
+                        )}
                       </div>
-                      <div className="text-gray-300 text-xs mt-1">{pair.universal.desc}</div>
-                      {pair.universal.connection && (
-                        <div className="text-yellow-200 text-xs mt-1 italic font-medium">
-                          {pair.universal.connection}
-                        </div>
-                      )}
-                    </div>
-                    <div className={`p-2 sm:p-3 rounded-lg border-l-4 ${pair.computer.color} flex flex-col justify-center`}>
-                      <div className="font-bold text-white text-xs sm:text-sm">{pair.computer.level}</div>
-                      <div className="text-gray-300 text-xs mt-1">{pair.computer.desc}</div>
-                      {pair.computer.connection && (
-                        <div className="text-yellow-200 text-xs mt-1 italic font-medium">
-                          {pair.computer.connection}
-                        </div>
-                      )}
-                    </div>
-                  </React.Fragment>
-                ))}
+                      <div className={`p-2 sm:p-3 rounded-lg border-l-4 ${pair.computer.color} flex flex-col justify-center`}>
+                        <div className="font-bold text-white text-xs sm:text-sm">{pair.computer.level}</div>
+                        <div className="text-gray-300 text-xs mt-1">{pair.computer.desc}</div>
+                        {pair.computer.connection && (
+                          <div className="text-yellow-200 text-xs mt-1 italic font-medium">
+                            {pair.computer.connection}
+                          </div>
+                        )}
+                      </div>
+                    </React.Fragment>
+                  ))}
+                </div>
               </div>
               
               {/* Échelle de Planck - section séparée */}
@@ -304,6 +348,44 @@ De même, les classes qui composent un package n'existent pas à l'avance sous u
                 <p className="text-xs sm:text-sm lg:text-base text-cyan-100 leading-relaxed font-medium">
                 <strong className="text-cyan-300">Chaque couche encapsule la suivante :</strong> L'interface utilisateur que nous voyons est générée à partir des vues, elles-mêmes issues de packages, résultant de classes qui sont faites de fonctions et variables.
 
+              {/* Mobile Layout - Échelles quantiques */}
+              <div className="grid md:hidden grid-cols-1 gap-4 sm:gap-6">
+                {/* Cascade Universelle (Suite) */}
+                <h3 className="text-base sm:text-lg font-bold text-emerald-200 mb-3 sm:mb-4">
+                 🌌 Cascade Universelle (Suite)
+                </h3>
+                {pairedQuantumCascadeItems.map((pair, index) => (
+                  <div key={`quantum-universal-${index}`} className={`p-2 sm:p-3 rounded-lg border-l-4 ${pair.universal.color} flex flex-col justify-center`}>
+                    <div className="font-bold text-white text-xs sm:text-sm">
+                      {pair.universal.level}
+                      {pair.universal.scale && <span className="text-cyan-300 font-mono ml-2" dangerouslySetInnerHTML={{ __html: pair.universal.scale }}></span>}
+                    </div>
+                    <div className="text-gray-300 text-xs mt-1">{pair.universal.desc}</div>
+                    {pair.universal.connection && (
+                      <div className="text-yellow-200 text-xs mt-1 italic font-medium">
+                        {pair.universal.connection}
+                      </div>
+                    )}
+                  </div>
+                ))}
+                
+                {/* Cascade Informatique (Suite) */}
+                <h3 className="text-base sm:text-lg font-bold text-emerald-200 mb-3 sm:mb-4">
+                 💻 Cascade Informatique (Suite)
+                </h3>
+                {pairedQuantumCascadeItems.map((pair, index) => (
+                  <div key={`quantum-computer-${index}`} className={`p-2 sm:p-3 rounded-lg border-l-4 ${pair.computer.color} flex flex-col justify-center`}>
+                    <div className="font-bold text-white text-xs sm:text-sm">{pair.computer.level}</div>
+                    <div className="text-gray-300 text-xs mt-1">{pair.computer.desc}</div>
+                    {pair.computer.connection && (
+                      <div className="text-yellow-200 text-xs mt-1 italic font-medium">
+                        {pair.computer.connection}
+                      </div>
+                    )}
+                  </div>
+                ))}
+              </div>
+              
 De la même façon, notre échelle macroscopique est constitué de molécules, elles-mêmes faites d'atomes, formés de nucléons, composés de particules fondamentales.
                 </p>
               </div>

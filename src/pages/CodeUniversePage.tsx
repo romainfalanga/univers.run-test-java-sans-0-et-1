@@ -18,7 +18,7 @@ export const CodeUniversePage: React.FC = () => {
       computer: {
         level: "Interface utilisateur",
         desc: "Ce que nous voyons : pages web, applications, interfaces",
-        connection: "→ Rendu généré par l'assemblage de milliers de vues organisées",
+        connection: "→ Elle est composée de l'ensemble des vues",
         color: "bg-purple-900/40 border-purple-400"
       }
     },
@@ -31,9 +31,9 @@ export const CodeUniversePage: React.FC = () => {
         color: "bg-blue-900/40 border-blue-400"
       },
       computer: {
-        level: "Vues (Views)",
-        desc: "Assemblages de packages : composants React, templates, modules",
-        connection: "→ Fonctionnalités émergentes par combinaison de packages spécifiques",
+        level: "Vues",
+        desc: "Un fragment de l’interface utilisateur fonctionnant avec sa propre logique",
+        connection: "→ Chaque vue est construite à partir de plusieurs packages",
         color: "bg-blue-900/40 border-blue-400"
       }
     }
@@ -45,14 +45,14 @@ export const CodeUniversePage: React.FC = () => {
       universal: {
         level: "Échelle atomique",
         scale: "10<sup>-10</sup> m",
-        desc: "Briques de la matière en superposition quantique : hydrogène, carbone, fer",
+        desc: "Briques de la matière : hydrogène, carbone, fer",
         connection: "→ Formés par l'assemblage de protons, neutrons et électrons",
         color: "bg-green-900/40 border-green-400"
       },
       computer: {
         level: "Packages",
-        desc: "Briques logicielles en superposition : bibliothèques, modules, frameworks",
-        connection: "→ Formés par l'assemblage de classes, interfaces et configurations",
+        desc: "Regroupement de logiques réunies dans un même ensemble pour en créer une plus grandes",
+        connection: "→ Chaque package est construit à partir de plusieurs classes",
         color: "bg-green-900/40 border-green-400"
       }
     },
@@ -60,14 +60,14 @@ export const CodeUniversePage: React.FC = () => {
       universal: {
         level: "Échelle nucléaire",
         scale: "10<sup>-15</sup> m",
-        desc: "Cœur des atomes révélé par observation : protons et neutrons",
+        desc: "Cœur des atomes : protons et neutrons",
         connection: "→ Constitués de quarks liés par des gluons",
         color: "bg-yellow-900/40 border-yellow-400"
       },
       computer: {
         level: "Classes",
-        desc: "Cœur des packages révélé par inspection : classes, objets, structures",
-        connection: "→ Constituées de méthodes liées par des relations",
+        desc: "Structure qui définit l’état et les comportements d’un élément",
+        connection: "→ Chaque classe est composée de fonctions et de variables",
         color: "bg-yellow-900/40 border-yellow-400"
       }
     },
@@ -76,12 +76,12 @@ export const CodeUniversePage: React.FC = () => {
         level: "Échelle des particules fondamentales",
         scale: "10<sup>-18</sup> m",
         desc: "Constituants ultimes révélés par mesure : quarks, leptons, bosons",
-        connection: "→ Révélées comme briques ultimes",
+        connection: "→ Révélées comme briques ultimes de l'univers",
         color: "bg-orange-900/40 border-orange-400"
       },
       computer: {
         level: "Fonctions et variables",
-        desc: "Constituants ultimes révélés par analyse : fonctions, variables, constantes",
+        desc: "Les fonctions décrivent des actions, les variables stockent des données",
         connection: "→ Révélées comme briques ultimes du code",
         color: "bg-orange-900/40 border-orange-400"
       }

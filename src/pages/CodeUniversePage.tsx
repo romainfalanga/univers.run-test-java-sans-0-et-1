@@ -391,10 +391,6 @@ De même, les classes qui composent un package n'existent pas à l\'avance sous 
               </div>
             </div>
           </div>
-              
-              De la même façon, notre échelle macroscopique est constitué de molécules, elles-mêmes faites d'atomes, formés de nucléons, composés de particules fondamentales.
-            </p>
-          </div>
         </div>
       </div>
     </div>

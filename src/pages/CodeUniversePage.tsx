@@ -139,49 +139,41 @@ export const CodeUniversePage: React.FC = () => {
                           {item.level}
                           <span className="text-cyan-300 font-mono ml-2" dangerouslySetInnerHTML={{ __html: item.scale }}></span>
                         </div>
-                        <div className="text-gray-300 text-xs mt-1">{item.desc}</div>
-                        {item.connection && (
-                          <div className="text-yellow-200 text-xs mt-1 italic font-medium">
-                            {item.connection}
-                          </div>
-                        )}
-                      </div>
-                    ))}
-                  </div>
-                </div>
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-6 mb-6 items-stretch">
+                {/* Headers */}
+                <h3 className="text-base sm:text-lg font-bold text-emerald-200 mb-3 sm:mb-4">
+                 🌌 Cascade Universelle
+                </h3>
+                <h3 className="text-base sm:text-lg font-bold text-emerald-200 mb-3 sm:mb-4">
+                 💻 Cascade Informatique
+                </h3>
                 
-                <div className="space-y-3">
-                  <h3 className="text-base sm:text-lg font-bold text-emerald-200 mb-3 sm:mb-4">
-                   💻 Cascade Informatique
-                  </h3>
-                  
-                  <div className="space-y-2 sm:space-y-3">
-                    {[
-                      { 
-                        level: "Interface utilisateur", 
-                        desc: "Ce que nous voyons : humains, objets, monde visible", 
-                        connection: "→ Elle est composée de plusieurs vues.",
-                        color: "bg-purple-900/40 border-purple-400" 
-                      },
-                      { 
-                        level: "Vue / Scène", 
-                        desc: "Un fragment de l'interface utilisateur fonctionnant avec sa propre logique", 
-                        connection: "→ Chaque vue est construite à partir de plusieurs packages.",
-                        color: "bg-blue-900/40 border-blue-400" 
-                      }
-                    ].map((item, index) => (
-                      <div key={index} className={`p-2 sm:p-3 rounded-lg border-l-4 ${item.color} min-h-[60px] sm:min-h-[70px] flex flex-col justify-center`}>
-                        <div className="font-bold text-white text-xs sm:text-sm">{item.level}</div>
-                        <div className="text-gray-300 text-xs mt-1">{item.desc}</div>
-                        {item.connection && (
-                          <div className="text-yellow-200 text-xs mt-1 italic font-medium">
-                            {item.connection}
-                          </div>
-                        )}
+                {/* Paired items */}
+                {pairedClassicalCascadeItems.map((pair, index) => (
+                  <React.Fragment key={index}>
+                    <div className={`p-2 sm:p-3 rounded-lg border-l-4 ${pair.universal.color} flex flex-col justify-center`}>
+                      <div className="font-bold text-white text-xs sm:text-sm">
+                        {pair.universal.level}
+                        <span className="text-cyan-300 font-mono ml-2" dangerouslySetInnerHTML={{ __html: pair.universal.scale }}></span>
                       </div>
-                    ))}
-                  </div>
-                </div>
+                      <div className="text-gray-300 text-xs mt-1">{pair.universal.desc}</div>
+                      {pair.universal.connection && (
+                        <div className="text-yellow-200 text-xs mt-1 italic font-medium">
+                          {pair.universal.connection}
+                        </div>
+                      )}
+                    </div>
+                    <div className={`p-2 sm:p-3 rounded-lg border-l-4 ${pair.computer.color} flex flex-col justify-center`}>
+                      <div className="font-bold text-white text-xs sm:text-sm">{pair.computer.level}</div>
+                      <div className="text-gray-300 text-xs mt-1">{pair.computer.desc}</div>
+                      {pair.computer.connection && (
+                        <div className="text-yellow-200 text-xs mt-1 italic font-medium">
+                          {pair.computer.connection}
+                        </div>
+                      )}
+                    </div>
+                  </React.Fragment>
+                ))}
               </div>
 
               {/* Paragraphe de transition : Superposition Quantique */}
@@ -246,45 +238,41 @@ De même, les classes qui composent un package n'existent pas à l\'avance sous 
                         </div>
                       )}
                     </div>
-                  ))}
-                </div>
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-6 items-stretch">
+                {/* Headers */}
+                <h3 className="text-base sm:text-lg font-bold text-emerald-200 mb-3 sm:mb-4">
+                 🌌 Cascade Universelle (Suite)
+                </h3>
+                <h3 className="text-base sm:text-lg font-bold text-emerald-200 mb-3 sm:mb-4">
+                 💻 Cascade Informatique (Suite)
+                </h3>
                 
-                {/* Cascade Informatique (Logicielle) - Suite */}
-                <div className="space-y-3">
-                  <h3 className="text-base sm:text-lg font-bold text-emerald-200 mb-3 sm:mb-4">
-                   💻 Cascade Informatique (Suite)
-                  </h3>
-                  {[
-                    {
-                      level: "Package",
-                      desc: "Un regroupement de logiques réunies dans un même ensemble pour créer une logique plus grande",
-                      connection: "→ Chaque package est construit à partir de plusieurs classes.",
-                      color: "bg-green-900/40 border-green-400"
-                    },
-                    {
-                      level: "Classe",
-                      desc: "Une structure qui définit l'état et les comportements d'un élément",
-                      connection: "→ Chaque classe est composée de méthodes, de fonctions et de variables",
-                      color: "bg-yellow-900/40 border-yellow-400"
-                    },
-                    {
-                      level: "Méthodes, Fonctions et Variables",
-                      desc: "Les méthodes ou fonctions décrivent des actions, les variables stockent des données",
-                      connection: "→ Ce sont les briques ultimes",
-                      color: "bg-orange-900/40 border-orange-400"
-                    }
-                  ].map((item, index) => (
-                    <div key={index} className={`p-2 sm:p-3 rounded-lg border-l-4 ${item.color} min-h-[60px] sm:min-h-[70px] flex flex-col justify-center mb-2 sm:mb-3`}>
-                      <div className="font-bold text-white text-xs sm:text-sm">{item.level}</div>
-                      <div className="text-gray-300 text-xs mt-1">{item.desc}</div>
-                      {item.connection && (
+                {/* Paired items */}
+                {pairedQuantumCascadeItems.map((pair, index) => (
+                  <React.Fragment key={index}>
+                    <div className={`p-2 sm:p-3 rounded-lg border-l-4 ${pair.universal.color} flex flex-col justify-center`}>
+                      <div className="font-bold text-white text-xs sm:text-sm">
+                        {pair.universal.level}
+                        {pair.universal.scale && <span className="text-cyan-300 font-mono ml-2" dangerouslySetInnerHTML={{ __html: pair.universal.scale }}></span>}
+                      </div>
+                      <div className="text-gray-300 text-xs mt-1">{pair.universal.desc}</div>
+                      {pair.universal.connection && (
                         <div className="text-yellow-200 text-xs mt-1 italic font-medium">
-                          {item.connection}
+                          {pair.universal.connection}
                         </div>
                       )}
                     </div>
-                  ))}
-                </div>
+                    <div className={`p-2 sm:p-3 rounded-lg border-l-4 ${pair.computer.color} flex flex-col justify-center`}>
+                      <div className="font-bold text-white text-xs sm:text-sm">{pair.computer.level}</div>
+                      <div className="text-gray-300 text-xs mt-1">{pair.computer.desc}</div>
+                      {pair.computer.connection && (
+                        <div className="text-yellow-200 text-xs mt-1 italic font-medium">
+                          {pair.computer.connection}
+                        </div>
+                      )}
+                    </div>
+                  </React.Fragment>
+                ))}
               </div>
               
               {/* Échelle de Planck - section séparée */}

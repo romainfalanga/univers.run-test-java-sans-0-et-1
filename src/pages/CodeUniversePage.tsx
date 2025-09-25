@@ -333,27 +333,8 @@ De même, les classes qui composent un package n'existent pas à l\'avance sous 
                 </div>
               </div>
               
-              {/* Échelle de Planck - section séparée */}
-              <div className="mt-4 sm:mt-6">
-                <div className="p-2 sm:p-3 rounded-lg border-l-4 bg-red-900/40 border-red-400 min-h-[60px] sm:min-h-[70px] flex flex-col justify-center">
-                  <div className="font-bold text-white text-xs sm:text-sm">
-                    Échelle de Planck
-                    <span className="text-cyan-300 font-mono ml-2" dangerouslySetInnerHTML={{ __html: "10<sup>-35</sup> m" }}></span>
-                  </div>
-                  <div className="text-gray-300 text-xs mt-1">L'échelle de Planck est la limite ultime de la réalité : à cette échelle, l'espace, le temps et la matière cessent d'avoir une signification</div>
-                </div>
-              </div>
-              
-              <div className="mt-4 sm:mt-6 bg-gradient-to-r from-cyan-900/40 to-blue-900/30 backdrop-blur-sm rounded-lg p-3 sm:p-4 border-l-4 border-cyan-400">
-                <p className="text-xs sm:text-sm lg:text-base text-cyan-100 leading-relaxed font-medium">
-                <strong className="text-cyan-300">Chaque couche encapsule la suivante :</strong> L'interface utilisateur que nous voyons est générée à partir des vues, elles-mêmes issues de packages, résultant de classes qui sont faites de fonctions et variables.
-                
-                De la même façon, notre échelle macroscopique est constitué de molécules, elles-mêmes faites d'atomes, formés de nucléons, composés de particules fondamentales.
-                </p>
-              </div>
-
               {/* Mobile Layout - Échelles quantiques */}
-              <div className="grid md:hidden grid-cols-1 gap-4 sm:gap-6">
+              <div className="grid md:hidden grid-cols-1 gap-4 sm:gap-6 mb-6">
                 {/* Cascade Universelle (Suite) */}
                 <h3 className="text-base sm:text-lg font-bold text-emerald-200 mb-3 sm:mb-4">
                  🌌 Cascade Universelle (Suite)
@@ -388,6 +369,25 @@ De même, les classes qui composent un package n'existent pas à l\'avance sous 
                     )}
                   </div>
                 ))}
+              </div>
+
+              {/* Échelle de Planck - section séparée */}
+              <div className="mt-4 sm:mt-6">
+                <div className="p-2 sm:p-3 rounded-lg border-l-4 bg-red-900/40 border-red-400 min-h-[60px] sm:min-h-[70px] flex flex-col justify-center">
+                  <div className="font-bold text-white text-xs sm:text-sm">
+                    Échelle de Planck
+                    <span className="text-cyan-300 font-mono ml-2" dangerouslySetInnerHTML={{ __html: "10<sup>-35</sup> m" }}></span>
+                  </div>
+                  <div className="text-gray-300 text-xs mt-1">L'échelle de Planck est la limite ultime de la réalité : à cette échelle, l'espace, le temps et la matière cessent d'avoir une signification</div>
+                </div>
+              </div>
+              
+              <div className="mt-4 sm:mt-6 bg-gradient-to-r from-cyan-900/40 to-blue-900/30 backdrop-blur-sm rounded-lg p-3 sm:p-4 border-l-4 border-cyan-400">
+                <p className="text-xs sm:text-sm lg:text-base text-cyan-100 leading-relaxed font-medium">
+                <strong className="text-cyan-300">Chaque couche encapsule la suivante :</strong> L'interface utilisateur que nous voyons est générée à partir des vues, elles-mêmes issues de packages, résultant de classes qui sont faites de fonctions et variables.
+                
+                De la même façon, notre échelle macroscopique est constitué de molécules, elles-mêmes faites d'atomes, formés de nucléons, composés de particules fondamentales.
+                </p>
               </div>
             </div>
           </div>

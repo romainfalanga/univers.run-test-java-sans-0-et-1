@@ -391,15 +391,6 @@ De même, les classes qui composent un package n'existent pas à l\'avance sous 
               </div>
             </div>
           </div>
-        </div>
-      </div>
-      
-      {/* Conclusion finale - en bas de la page */}
-      <div className="w-full flex justify-center p-4 sm:p-6 relative z-20">
-        <div className="max-w-4xl mx-auto w-full">
-          <div className="bg-gradient-to-r from-cyan-900/40 to-blue-900/30 backdrop-blur-sm rounded-lg p-3 sm:p-4 border-l-4 border-cyan-400">
-            <p className="text-xs sm:text-sm lg:text-base text-cyan-100 leading-relaxed font-medium">
-              <strong className="text-cyan-300">Chaque couche encapsule la suivante :</strong> L'interface utilisateur que nous voyons est générée à partir des vues, elles-mêmes issues de packages, résultant de classes qui sont faites de fonctions et variables.
               
               De la même façon, notre échelle macroscopique est constitué de molécules, elles-mêmes faites d'atomes, formés de nucléons, composés de particules fondamentales.
             </p>

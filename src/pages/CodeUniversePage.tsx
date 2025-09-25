@@ -287,7 +287,7 @@ export const CodeUniversePage: React.FC = () => {
                   <p>
                     <strong className="text-green-300">Dans le code :</strong> En suivant cette logique, l'organisation des packages qui produisent les vues n'existe pas sous une forme unique et figée. Elle se déploie comme un ensemble de <strong className="text-yellow-300">probabilités</strong> d'agencements de packages possibles. Ce n\'est qu\'au moment où l\'on observe cette organisation que les packages prennent une configuration particulière.
 
-De même, les classes qui composent un package n'existent pas à l\'avance sous une seule écriture. Ils sont une <strong className="text-yellow-300">probabilité</strong> parmi une infinité de manières de produire le même rendu. Ce n\'est qu'au moment où l\'on \"ouvre\" le package et que l'on regarde sous son capot que le code se matérialise dans une version précise, comme si l\'acte d\'observation faisait émerger une implémentation unique parmi toutes les possibilités.
+De même, les classes qui composent un package n'existent pas à l\'avance sous une seule écriture. Ils sont une <strong className="text-yellow-300">probabilité</strong> parmi une infinité de manières de produire le même rendu. Ce n\'est qu\'au moment où l\'on \"ouvre\" le package et que l\'on regarde sous son capot que le code se matérialise dans une version précise, comme si l\'acte d\'observation faisait émerger une implémentation unique parmi toutes les possibilités.
                   </p>
                 </div>
               </div>

@@ -18,7 +18,7 @@ export const CodeUniversePage: React.FC = () => {
       computer: {
         level: "Interface utilisateur",
         desc: "Ce que nous voyons : humains, objets, monde visible",
-        connection: "→ Formé par l'assemblage de milliards de Vues organisées",
+        connection: "→ Formé par l'assemblage de milliards de vues organisées",
         color: "bg-purple-900/40 border-purple-400"
       }
     },
@@ -244,7 +244,7 @@ export const CodeUniversePage: React.FC = () => {
                     <strong className="text-cyan-300">Dans l'univers :</strong> à cette échelle, les entités physiques (atomes, électrons, particules) existent dans plusieurs états à la fois. Dans l'<strong className="text-purple-300">expérience de la double fente</strong>, par exemple, un électron ou un atome passe simultanément par les deux fentes, créant des interférences avec lui-même. Leur existence est une <strong className="text-yellow-300">probabilité</strong> diffuse jusqu'à ce qu\'une observation ou une mesure "effondre" cette superposition en un état défini.
                   </p>
                   <p>
-                    <strong className="text-green-300">Dans le code :</strong> En suivant cette logique, l'organisation des packages qui produisent les Vues n'existe pas sous une forme unique et figée. Elle se déploie comme un ensemble de <strong className="text-yellow-300">probabilités</strong> d'agencements de packages possibles. Ce n\'est qu\'au moment où l\'on observe cette organisation que les packages prennent une configuration particulière.
+                    <strong className="text-green-300">Dans le code :</strong> En suivant cette logique, l'organisation des packages qui produisent les vues n'existe pas sous une forme unique et figée. Elle se déploie comme un ensemble de <strong className="text-yellow-300">probabilités</strong> d'agencements de packages possibles. Ce n\'est qu\'au moment où l\'on observe cette organisation que les packages prennent une configuration particulière.
 
 De même, les classes qui composent un package n'existent pas à l\'avance sous une seule écriture. Ils sont une <strong className="text-yellow-300">probabilité</strong> parmi une infinité de manières de produire le même rendu. Ce n\'est qu\'au moment où l\'on \"ouvre\" le package et que l\'on regarde sous son capot que le code se matérialise dans une version précise, comme si l\'acte d\'observation faisait émerger une implémentation unique parmi toutes les possibilités.
                   </p>

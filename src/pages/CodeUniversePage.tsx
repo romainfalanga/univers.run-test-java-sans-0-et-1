@@ -234,119 +234,175 @@ export const CodeUniversePage: React.FC = () => {
                 </div>
               </div>
 
-              {/* Mobile Layout - Échelles classiques */}
-              <div className="grid md:hidden grid-cols-1 gap-4 sm:gap-6 mb-6">
-                {/* Cascade Universelle */}
-                <h3 className="text-base sm:text-lg font-bold text-emerald-200 mb-3 sm:mb-4">
-                 🌌 Cascade Universelle
-                </h3>
-                {pairedClassicalCascadeItems.map((pair, index) => (
-                  <div key={`universal-${index}`} className={`p-2 sm:p-3 rounded-lg border-l-4 ${pair.universal.color} flex flex-col justify-center`}>
-                    <div className="font-bold text-white text-xs sm:text-sm">
-                      {pair.universal.level}
-                      <span className="text-cyan-300 font-mono ml-2" dangerouslySetInnerHTML={{ __html: pair.universal.scale }}></span>
-                    </div>
-                    <div className="text-gray-300 text-xs mt-1">{pair.universal.desc}</div>
-                    {pair.universal.connection && (
-                      <div className="text-yellow-200 text-xs mt-1 italic font-medium">
-                        {pair.universal.connection}
-                      </div>
-                    )}
-                  </div>
-                ))}
-                
-                {/* Cascade Informatique */}
-                <h3 className="text-base sm:text-lg font-bold text-emerald-200 mb-3 sm:mb-4">
-                 💻 Cascade Informatique
-                </h3>
-                {pairedClassicalCascadeItems.map((pair, index) => (
-                  <div key={`computer-${index}`} className={`p-2 sm:p-3 rounded-lg border-l-4 ${pair.computer.color} flex flex-col justify-center`}>
-                    <div className="font-bold text-white text-xs sm:text-sm">{pair.computer.level}</div>
-                    <div className="text-gray-300 text-xs mt-1">{pair.computer.desc}</div>
-                    {pair.computer.connection && (
-                      <div className="text-yellow-200 text-xs mt-1 italic font-medium">
-                        {pair.computer.connection}
-                      </div>
-                    )}
-                  </div>
-                ))}
-              </div>
-                          </div>
-                        )}
-                      </div>
-                      <div className={`p-2 sm:p-3 rounded-lg border-l-4 ${pair.computer.color} flex flex-col justify-center`}>
-                        <div className="font-bold text-white text-xs sm:text-sm">{pair.computer.level}</div>
-                        <div className="text-gray-300 text-xs mt-1">{pair.computer.desc}</div>
-                        {pair.computer.connection && (
-                          <div className="text-yellow-200 text-xs mt-1 italic font-medium">
-                            {pair.computer.connection}
-                          </div>
-                        )}
-                      </div>
-                    </React.Fragment>
-                  ))}
-                </div>
-              </div>
-              
-              {/* Échelle de Planck - section séparée */}
-              <div className="mt-4 sm:mt-6">
-                <div className="p-2 sm:p-3 rounded-lg border-l-4 bg-red-900/40 border-red-400 min-h-[60px] sm:min-h-[70px] flex flex-col justify-center">
-                  <div className="font-bold text-white text-xs sm:text-sm">
-                    Échelle de Planck
-                    <span className="text-cyan-300 font-mono ml-2" dangerouslySetInnerHTML={{ __html: "10<sup>-35</sup> m" }}></span>
-                  </div>
-                  <div className="text-gray-300 text-xs mt-1">L'échelle de Planck est la limite ultime de la réalité : à cette échelle, l'espace, le temps et la matière cessent d'avoir une signification</div>
-                </div>
-              </div>
-              
-              <div className="mt-4 sm:mt-6 bg-gradient-to-r from-cyan-900/40 to-blue-900/30 backdrop-blur-sm rounded-lg p-3 sm:p-4 border-l-4 border-cyan-400">
-                <p className="text-xs sm:text-sm lg:text-base text-cyan-100 leading-relaxed font-medium">
-                <strong className="text-cyan-300">Chaque couche encapsule la suivante :</strong> L'interface utilisateur que nous voyons est générée à partir des vues, elles-mêmes issues de packages, résultant de classes qui sont faites de fonctions et variables.
+            </div>
 
-              {/* Mobile Layout - Échelles quantiques */}
-              <div className="grid md:hidden grid-cols-1 gap-4 sm:gap-6">
-                {/* Cascade Universelle (Suite) */}
+            {/* Mobile Layout - Échelles classiques */}
+            <div className="grid md:hidden grid-cols-1 gap-4 sm:gap-6 mb-6">
+              {/* Cascade Universelle */}
+              <h3 className="text-base sm:text-lg font-bold text-emerald-200 mb-3 sm:mb-4">
+               🌌 Cascade Universelle
+              </h3>
+              {pairedClassicalCascadeItems.map((pair, index) => (
+                <div key={`universal-${index}`} className={`p-2 sm:p-3 rounded-lg border-l-4 ${pair.universal.color} flex flex-col justify-center`}>
+                  <div className="font-bold text-white text-xs sm:text-sm">
+                    {pair.universal.level}
+                    <span className="text-cyan-300 font-mono ml-2" dangerouslySetInnerHTML={{ __html: pair.universal.scale }}></span>
+                  </div>
+                  <div className="text-gray-300 text-xs mt-1">{pair.universal.desc}</div>
+                  {pair.universal.connection && (
+                    <div className="text-yellow-200 text-xs mt-1 italic font-medium">
+                      {pair.universal.connection}
+                    </div>
+                  )}
+                </div>
+              ))}
+              
+              {/* Cascade Informatique */}
+              <h3 className="text-base sm:text-lg font-bold text-emerald-200 mb-3 sm:mb-4">
+               💻 Cascade Informatique
+              </h3>
+              {pairedClassicalCascadeItems.map((pair, index) => (
+                <div key={`computer-${index}`} className={`p-2 sm:p-3 rounded-lg border-l-4 ${pair.computer.color} flex flex-col justify-center`}>
+                  <div className="font-bold text-white text-xs sm:text-sm">{pair.computer.level}</div>
+                  <div className="text-gray-300 text-xs mt-1">{pair.computer.desc}</div>
+                  {pair.computer.connection && (
+                    <div className="text-yellow-200 text-xs mt-1 italic font-medium">
+                      {pair.computer.connection}
+                    </div>
+                  )}
+                </div>
+              ))}
+            </div>
+
+            {/* Transition vers la Superposition Quantique */}
+            <div className="bg-gradient-to-r from-indigo-900/60 to-purple-900/50 backdrop-blur-sm rounded-xl p-4 sm:p-6 border border-indigo-400/40 mb-4 sm:mb-6 shadow-xl">
+              <div className="flex items-center mb-3 sm:mb-4">
+                <Zap className="w-6 h-6 sm:w-8 sm:h-8 mr-2 sm:mr-3 text-indigo-400 animate-pulse" />
+                <h3 className="text-base sm:text-lg lg:text-xl font-bold text-indigo-300">
+                  Transition vers la Superposition Quantique
+                </h3>
+              </div>
+              <p className="text-xs sm:text-sm lg:text-base text-indigo-100 leading-relaxed font-medium">
+                Nous entrons maintenant dans le domaine de la physique quantique, où les particules existent en <strong className="text-white">superposition</strong> - dans tous les états possibles simultanément - jusqu'à ce qu'un moment de "mesure" les force à choisir un état spécifique.
+                
+                C'est exactement ce qui se passe quand nous regardons sous le capot que le code se matérialise dans une version précise parmi toutes les possibilités.
+              </p>
+            </div>
+
+            {/* Desktop Layout - Échelles quantiques */}
+            <div className="hidden md:grid">
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-6 items-stretch">
+                {/* Headers */}
                 <h3 className="text-base sm:text-lg font-bold text-emerald-200 mb-3 sm:mb-4">
                  🌌 Cascade Universelle (Suite)
                 </h3>
+                <h3 className="text-base sm:text-lg font-bold text-emerald-200 mb-3 sm:mb-4">
+                 💻 Cascade Informatique (Suite)
+                </h3>
+                
+                {/* Paired items */}
                 {pairedQuantumCascadeItems.map((pair, index) => (
-                  <div key={`quantum-universal-${index}`} className={`p-2 sm:p-3 rounded-lg border-l-4 ${pair.universal.color} flex flex-col justify-center`}>
-                    <div className="font-bold text-white text-xs sm:text-sm">
-                      {pair.universal.level}
-                      {pair.universal.scale && <span className="text-cyan-300 font-mono ml-2" dangerouslySetInnerHTML={{ __html: pair.universal.scale }}></span>}
-                    </div>
-                    <div className="text-gray-300 text-xs mt-1">{pair.universal.desc}</div>
-                    {pair.universal.connection && (
-                      <div className="text-yellow-200 text-xs mt-1 italic font-medium">
-                        {pair.universal.connection}
+                  <React.Fragment key={index}>
+                    <div className={`p-2 sm:p-3 rounded-lg border-l-4 ${pair.universal.color} flex flex-col justify-center`}>
+                      <div className="font-bold text-white text-xs sm:text-sm">
+                        {pair.universal.level}
+                        {pair.universal.scale && <span className="text-cyan-300 font-mono ml-2" dangerouslySetInnerHTML={{ __html: pair.universal.scale }}></span>}
                       </div>
-                    )}
-                  </div>
+                      <div className="text-gray-300 text-xs mt-1">{pair.universal.desc}</div>
+                      {pair.universal.connection && (
+                        <div className="text-yellow-200 text-xs mt-1 italic font-medium">
+                          {pair.universal.connection}
+                        </div>
+                      )}
+                    </div>
+                    <div className={`p-2 sm:p-3 rounded-lg border-l-4 ${pair.computer.color} flex flex-col justify-center`}>
+                      <div className="font-bold text-white text-xs sm:text-sm">{pair.computer.level}</div>
+                      <div className="text-gray-300 text-xs mt-1">{pair.computer.desc}</div>
+                      {pair.computer.connection && (
+                        <div className="text-yellow-200 text-xs mt-1 italic font-medium">
+                          {pair.computer.connection}
+                        </div>
+                      )}
+                    </div>
+                  </React.Fragment>
                 ))}
-                
-                {/* Échelle de Planck - maintenant dans la cascade universelle mobile */}
-                <div className="p-2 sm:p-3 rounded-lg border-l-4 bg-red-900/40 border-red-400 min-h-[60px] sm:min-h-[70px] flex flex-col justify-center">
+              </div>
+            </div>
+
+            {/* Mobile Layout - Échelles quantiques */}
+            <div className="grid md:hidden grid-cols-1 gap-4 sm:gap-6">
+              {/* Cascade Universelle (Suite) */}
+              <h3 className="text-base sm:text-lg font-bold text-emerald-200 mb-3 sm:mb-4">
+               🌌 Cascade Universelle (Suite)
+              </h3>
+              {pairedQuantumCascadeItems.map((pair, index) => (
+                <div key={`quantum-universal-${index}`} className={`p-2 sm:p-3 rounded-lg border-l-4 ${pair.universal.color} flex flex-col justify-center`}>
                   <div className="font-bold text-white text-xs sm:text-sm">
-                    Échelle de Planck
-                    <span className="text-cyan-300 font-mono ml-2" dangerouslySetInnerHTML={{ __html: "10<sup>-35</sup> m" }}></span>
+                    {pair.universal.level}
+                    {pair.universal.scale && <span className="text-cyan-300 font-mono ml-2" dangerouslySetInnerHTML={{ __html: pair.universal.scale }}></span>}
                   </div>
-                  <div className="text-gray-300 text-xs mt-1">L'échelle de Planck est la limite ultime de la réalité : à cette échelle, l'espace, le temps et la matière cessent d'avoir une signification</div>
+                  <div className="text-gray-300 text-xs mt-1">{pair.universal.desc}</div>
+                  {pair.universal.connection && (
+                    <div className="text-yellow-200 text-xs mt-1 italic font-medium">
+                      {pair.universal.connection}
+                    </div>
+                  )}
                 </div>
+              ))}
+              
+              {/* Échelle de Planck - maintenant dans la cascade universelle mobile */}
+              <div className="p-2 sm:p-3 rounded-lg border-l-4 bg-red-900/40 border-red-400 min-h-[60px] sm:min-h-[70px] flex flex-col justify-center">
+                <div className="font-bold text-white text-xs sm:text-sm">
+                  Échelle de Planck
+                  <span className="text-cyan-300 font-mono ml-2" dangerouslySetInnerHTML={{ __html: "10<sup>-35</sup> m" }}></span>
+                </div>
+                <div className="text-gray-300 text-xs mt-1">L'échelle de Planck est la limite ultime de la réalité : à cette échelle, l'espace, le temps et la matière cessent d'avoir une signification</div>
+              </div>
+              
+              {/* Paragraphe de conclusion - maintenant après la cascade universelle mobile */}
+              <div className="bg-gradient-to-r from-cyan-900/40 to-blue-900/30 backdrop-blur-sm rounded-lg p-3 sm:p-4 border-l-4 border-cyan-400">
+                <p className="text-xs sm:text-sm lg:text-base text-cyan-100 leading-relaxed font-medium">
+                  <strong className="text-cyan-300">Chaque couche encapsule la suivante :</strong> L'interface utilisateur que nous voyons est générée à partir des vues, elles-mêmes issues de packages, résultant de classes qui sont faites de fonctions et variables.
+                  
+                  De la même façon, notre échelle macroscopique est constitué de molécules, elles-mêmes faites d'atomes, formés de nucléons, composés de particules fondamentales.
+                </p>
+              </div>
+              
+              {/* Cascade Informatique (Suite) */}
+              <h3 className="text-base sm:text-lg font-bold text-emerald-200 mb-3 sm:mb-4">
+               💻 Cascade Informatique (Suite)
+              </h3>
+              {pairedQuantumCascadeItems.map((pair, index) => (
+                <div key={`quantum-computer-${index}`} className={`p-2 sm:p-3 rounded-lg border-l-4 ${pair.computer.color} flex flex-col justify-center`}>
+                  <div className="font-bold text-white text-xs sm:text-sm">{pair.computer.level}</div>
+                  <div className="text-gray-300 text-xs mt-1">{pair.computer.desc}</div>
+                  {pair.computer.connection && (
+                    <div className="text-yellow-200 text-xs mt-1 italic font-medium">
+                      {pair.computer.connection}
+                    </div>
+                  )}
+                </div>
+              ))}
+            </div>
+
+            {/* Échelle de Planck - section séparée pour desktop */}
+            <div className="mt-4 sm:mt-6 hidden md:block">
+              <div className="p-2 sm:p-3 rounded-lg border-l-4 bg-red-900/40 border-red-400 min-h-[60px] sm:min-h-[70px] flex flex-col justify-center">
+                <div className="font-bold text-white text-xs sm:text-sm">
+                  Échelle de Planck
+                  <span className="text-cyan-300 font-mono ml-2" dangerouslySetInnerHTML={{ __html: "10<sup>-35</sup> m" }}></span>
+                </div>
+                <div className="text-gray-300 text-xs mt-1">L'échelle de Planck est la limite ultime de la réalité : à cette échelle, l'espace, le temps et la matière cessent d'avoir une signification</div>
+              </div>
+            </div>
+            
+            {/* Paragraphe de conclusion pour desktop */}
+            <div className="mt-4 sm:mt-6 bg-gradient-to-r from-cyan-900/40 to-blue-900/30 backdrop-blur-sm rounded-lg p-3 sm:p-4 border-l-4 border-cyan-400 hidden md:block">
+              <p className="text-xs sm:text-sm lg:text-base text-cyan-100 leading-relaxed font-medium">
+                <strong className="text-cyan-300">Chaque couche encapsule la suivante :</strong> L'interface utilisateur que nous voyons est générée à partir des vues, elles-mêmes issues de packages, résultant de classes qui sont faites de fonctions et variables.
                 
-                {/* Paragraphe de conclusion - maintenant après la cascade universelle mobile */}
-                <div className="bg-gradient-to-r from-cyan-900/40 to-blue-900/30 backdrop-blur-sm rounded-lg p-3 sm:p-4 border-l-4 border-cyan-400">
-                  <p className="text-xs sm:text-sm lg:text-base text-cyan-100 leading-relaxed font-medium">
-                    <strong className="text-cyan-300">Chaque couche encapsule la suivante :</strong> L'interface utilisateur que nous voyons est générée à partir des vues, elles-mêmes issues de packages, résultant de classes qui sont faites de fonctions et variables.
-                    
-                    De la même façon, notre échelle macroscopique est constitué de molécules, elles-mêmes faites d'atomes, formés de nucléons, composés de particules fondamentales.
-                  </p>
-                </div>
-                    
-                    De la même façon, notre échelle macroscopique est constitué de molécules, elles-mêmes faites d'atomes, formés de nucléons, composés de particules fondamentales.
-                  </p>
-                </div>
-                
-                {/* Cascade Informatique (Suite) */}
+                De la même façon, notre échelle macroscopique est constitué de molécules, elles-mêmes faites d'atomes, formés de nucléons, composés de particules fondamentales.
+              </p>
             </div>
           </div>
         </div>

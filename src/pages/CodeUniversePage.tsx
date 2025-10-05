@@ -100,7 +100,7 @@ export const CodeUniversePage: React.FC = () => {
         <div className="absolute inset-0 bg-[linear-gradient(45deg,transparent_25%,rgba(147,51,234,0.03)_50%,transparent_75%)] bg-[length:80px_80px] opacity-60 z-0 animate-pulse"></div>
         
         {/* Page d'introduction */}
-        <div className="w-full flex items-start justify-center p-4 sm:p-6 pt-8 relative z-20">
+        <div className="w-full flex items-start justify-center p-4 sm:p-6 relative z-20">
           <div className="max-w-4xl mx-auto w-full text-center">
             
             {/* Titre principal */}

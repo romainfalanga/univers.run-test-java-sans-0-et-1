@@ -184,7 +184,7 @@ export const ClassicalRelativityPage: React.FC = () => {
                     </div>
                     <div className="bg-gradient-to-r from-cyan-900/40 to-purple-900/40 p-3 rounded-lg border border-cyan-400/30">
                       <p className="text-cyan-100 font-medium">
-                        👉 <strong>En résumé :</strong> la formule <span className="font-mono text-purple-200">E = mc²</span> n'est pas seulement un symbole scientifique. Elle nous dit que la matière est de l'énergie concentrée, et que notre expérience du temps et de l'espace dépend de la manière dont nous dépensons notre budget d'espace-temps.
+                        👉 <strong>En résumé :</strong> la formule <span className="font-mono text-purple-200">E = mc²</span> n'est pas seulement un symbole scientifique. Elle nous dit que la matière est de l\'énergie concentrée, et que notre expérience du temps et de l'espace dépend de la manière dont nous dépensons notre budget d\'espace-temps.
                       </p>
                     </div>
                   </div>

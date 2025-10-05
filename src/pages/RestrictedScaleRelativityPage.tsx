@@ -143,7 +143,7 @@ export const RestrictedScaleRelativityPage: React.FC = () => {
               <div className="bg-green-900/20 p-4 sm:p-6 rounded-lg border-l-4 border-green-400">
                 <h3 className="text-lg font-semibold text-green-200 mb-3">Conséquences</h3>
                 <p className="text-sm sm:text-base text-gray-200 leading-relaxed">
-                  Si tu es presque immobile, la quasi-totalité de ton budget est consacrée au temps. Tu avances dans ton horloge à plein régime, et ton escalator d'échelle descend à peine. <strong className="text-white">L'inclinaison de ton escalator est très faible, presque plate</strong>.
+                  Si tu es presque immobile, la quasi-totalité de ton budget est consacrée au temps. Tu avances dans ton horloge à plein régime, et ton tapis roulant d'échelle descend à peine. <strong className="text-white">L'inclinaison de ton tapis roulant est très faible, presque plate</strong>.
                 </p>
               </div>
             </div>
@@ -205,7 +205,7 @@ export const RestrictedScaleRelativityPage: React.FC = () => {
               <div className="bg-red-900/20 p-4 sm:p-6 rounded-lg border-l-4 border-red-400">
                 <h3 className="text-lg font-semibold text-red-200 mb-3">Conséquences</h3>
                 <p className="text-sm sm:text-base text-gray-200 leading-relaxed">
-                  Si tu frôles la vitesse de la lumière, ton temps propre s'effondre : ton horloge bat au ralenti. Comme le curseur temps s'est réduit à une fraction infime, le budget temps-échelle prend l'essentiel. <strong className="text-white">L'escalator s'incline brutalement vers le bas, et ta descente vers l'infiniment petit devient vertigineuse</strong>.
+                  Si tu frôles la vitesse de la lumière, ton temps propre s'effondre : ton horloge bat au ralenti. Comme le curseur temps s'est réduit à une fraction infime, le budget temps-échelle prend l'essentiel. <strong className="text-white">Le tapis roulant s'incline brutalement vers le bas, et ta descente vers l'infiniment petit devient vertigineuse</strong>.
                 </p>
               </div>
             </div>
@@ -229,7 +229,7 @@ export const RestrictedScaleRelativityPage: React.FC = () => {
               <div className="bg-gradient-to-r from-indigo-900/40 to-purple-900/30 p-4 sm:p-6 rounded-lg border-l-4 border-indigo-400">
                 <h3 className="text-lg font-semibold text-indigo-200 mb-3">Le Moteur Immuable</h3>
                 <p className="text-sm sm:text-base text-gray-200 leading-relaxed">
-                  <strong className="text-white">La vitesse ne change jamais le moteur, elle change uniquement l'angle de la pente.</strong> Que vous soyez immobile ou que vous frôliez la vitesse de la lumière, vous descendez toujours l'escalator universel à exactement 299 792 458 mètres par seconde. Seule l'inclinaison varie.
+                  <strong className="text-white">La vitesse ne change jamais le moteur, elle change uniquement l'angle de la pente.</strong> Que vous soyez immobile ou que vous frôliez la vitesse de la lumière, vous descendez toujours le tapis roulant universel à exactement 299 792 458 mètres par seconde. Seule l'inclinaison varie.
                 </p>
               </div>
             </div>

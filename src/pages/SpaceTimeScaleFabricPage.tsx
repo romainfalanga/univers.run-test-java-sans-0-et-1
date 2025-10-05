@@ -82,29 +82,29 @@ export const SpaceTimeScaleFabricPage: React.FC = () => {
               </div>
               
               <p className="text-base sm:text-lg text-gray-200 leading-relaxed">
-                Ce moteur ne varie jamais. Il bat comme un métronome cosmique, entraînant tout l'univers dans sa cadence. Chaque particule, chaque atome, chaque être vivant descend cet escalator universel à exactement la même vitesse : <strong className="text-cyan-300">299 792 458 mètres par seconde</strong>.
+                Ce moteur ne varie jamais. Il bat comme un métronome cosmique, entraînant tout l'univers dans sa cadence. Chaque particule, chaque atome, chaque être vivant descend ce tapis roulant universel à exactement la même vitesse : <strong className="text-cyan-300">299 792 458 mètres par seconde</strong>.
               </p>
               
               <div className="bg-gradient-to-r from-purple-900/30 to-pink-900/20 p-4 sm:p-6 rounded-lg border-l-4 border-purple-400">
                 <h3 className="text-lg font-semibold text-purple-300 mb-3">L'Inclinaison Variable</h3>
                 <p className="text-sm sm:text-base text-gray-200 leading-relaxed">
-                  <strong className="text-white">Tout descend toujours à ce rythme, sans exception.</strong> La seule différence, c'est l'inclinaison de l'escalator : plus ou moins raide selon la vitesse, la masse et l'énergie.
+                  <strong className="text-white">Tout descend toujours à ce rythme, sans exception.</strong> La seule différence, c'est l'inclinaison du tapis roulant : plus ou moins raide selon la vitesse, la masse et l'énergie.
                 </p>
               </div>
               
               <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
                 <div className="bg-green-900/20 p-4 rounded-lg border border-green-400/30 text-center">
-                  <h4 className="font-semibold text-green-300 mb-2">Escalator Plat</h4>
+                  <h4 className="font-semibold text-green-300 mb-2">Tapis Roulant Plat</h4>
                   <p className="text-xs sm:text-sm text-gray-300">Objet au repos, faible masse</p>
                   <p className="text-xs text-green-200 mt-2">Avancement surtout dans le temps</p>
                 </div>
                 <div className="bg-yellow-900/20 p-4 rounded-lg border border-yellow-400/30 text-center">
-                  <h4 className="font-semibold text-yellow-300 mb-2">Escalator Incliné</h4>
+                  <h4 className="font-semibold text-yellow-300 mb-2">Tapis Roulant Incliné</h4>
                   <p className="text-xs sm:text-sm text-gray-300">Vitesse modérée, masse importante</p>
                   <p className="text-xs text-yellow-200 mt-2">Partage temps-échelle équilibré</p>
                 </div>
                 <div className="bg-red-900/20 p-4 rounded-lg border border-red-400/30 text-center">
-                  <h4 className="font-semibold text-red-300 mb-2">Escalator Vertical</h4>
+                  <h4 className="font-semibold text-red-300 mb-2">Tapis Roulant Vertical</h4>
                   <p className="text-xs sm:text-sm text-gray-300">Vitesse extrême, masse énorme</p>
                   <p className="text-xs text-red-200 mt-2">Plongée vertigineuse dans l'échelle</p>
                 </div>
@@ -124,7 +124,7 @@ export const SpaceTimeScaleFabricPage: React.FC = () => {
               <div className="bg-gradient-to-r from-indigo-900/40 to-purple-900/30 p-4 sm:p-6 rounded-lg border-l-4 border-indigo-400">
                 <h3 className="text-lg font-semibold text-indigo-200 mb-3">La Connexion Invisible</h3>
                 <p className="text-sm sm:text-base text-gray-200 leading-relaxed">
-                  Cette connexion explique pourquoi l'univers semble "s'étendre" : ce n'est pas l'espace qui grandit, mais l'échelle qui se contracte. Chaque objet, selon sa masse et sa vitesse, descend son escalator avec une inclinaison différente, créant l'illusion d'un éloignement mutuel.
+                  Cette connexion explique pourquoi l'univers semble "s'étendre" : ce n'est pas l'espace qui grandit, mais l'échelle qui se contracte. Chaque objet, selon sa masse et sa vitesse, descend son tapis roulant avec une inclinaison différente, créant l'illusion d'un éloignement mutuel.
                 </p>
               </div>
               

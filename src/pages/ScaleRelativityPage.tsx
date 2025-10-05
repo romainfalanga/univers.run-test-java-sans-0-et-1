@@ -49,12 +49,12 @@ export const ScaleRelativityPage: React.FC = () => {
               </div>
               
               <p className="text-base sm:text-lg text-gray-200 leading-relaxed">
-                Nous ne voyageons pas seulement dans des lieux et dans des instants : <strong className="text-teal-300">nous avançons aussi dans la profondeur du petit</strong>. À chaque seconde, sans le sentir, nous descendons un escalator infini qui nous entraîne vers l'infiniment petit.
+                Nous ne voyageons pas seulement dans des lieux et dans des instants : <strong className="text-teal-300">nous avançons aussi dans la profondeur du petit</strong>. À chaque seconde, sans le sentir, nous descendons un tapis roulant infini qui nous entraîne vers l'infiniment petit.
               </p>
               
               <div className="bg-gradient-to-r from-cyan-900/40 to-blue-900/30 p-4 sm:p-6 rounded-lg border-l-4 border-cyan-400">
                 <p className="text-base sm:text-lg text-cyan-100 leading-relaxed">
-                  Cet escalator n'a qu'une seule cadence : <strong className="text-white">la vitesse de la lumière</strong>. C'est le battement de cœur de l'univers, l'horloge universelle. Rien ni personne ne peut s'en détacher. Tout ce que nous faisons, c'est descendre sa pente, avec une inclinaison plus ou moins forte.
+                  Ce tapis roulant n'a qu'une seule cadence : <strong className="text-white">la vitesse de la lumière</strong>. C'est le battement de cœur de l'univers, l'horloge universelle. Rien ni personne ne peut s'en détacher. Tout ce que nous faisons, c'est descendre sa pente, avec une inclinaison plus ou moins forte.
                 </p>
               </div>
               
@@ -87,7 +87,7 @@ export const ScaleRelativityPage: React.FC = () => {
               
               <div className="bg-gradient-to-r from-cyan-900/40 to-emerald-900/30 p-4 sm:p-6 rounded-lg border-l-4 border-cyan-400">
                 <p className="text-sm sm:text-base text-gray-200 leading-relaxed">
-                  <strong className="text-cyan-300">La seule différence, c'est l'inclinaison de l'escalator :</strong> plus ou moins raide selon la vitesse, la masse et l'énergie.
+                  <strong className="text-cyan-300">La seule différence, c'est l'inclinaison du tapis roulant :</strong> plus ou moins raide selon la vitesse, la masse et l'énergie.
                 </p>
               </div>
               
@@ -159,28 +159,28 @@ export const ScaleRelativityPage: React.FC = () => {
             <div className="space-y-4 sm:space-y-6">
               <div className="bg-purple-900/20 p-4 sm:p-6 rounded-lg border-l-4 border-purple-400">
                 <p className="text-sm sm:text-base text-gray-200 leading-relaxed">
-                  Imagine que tu es sur ton escalator. Il descend toujours à la même cadence : <strong className="text-white">la vitesse de la lumière</strong>. Rien n'accélère ni ne ralentit le moteur, il bat comme un métronome absolu.
+                  Imagine que tu es sur ton tapis roulant. Il descend toujours à la même cadence : <strong className="text-white">la vitesse de la lumière</strong>. Rien n'accélère ni ne ralentit le moteur, il bat comme un métronome absolu.
                 </p>
               </div>
               
               <div className="bg-indigo-900/20 p-4 sm:p-6 rounded-lg border-l-4 border-indigo-400">
                 <p className="text-sm sm:text-base text-gray-200 leading-relaxed">
-                  Mais voilà : <strong className="text-indigo-300">la masse et l'énergie qui t'entourent viennent poser leur poids sur ce tapis roulant</strong>. Une planète, une étoile, un nuage de gaz brûlant : tout cela pèse sur le tissu de l'espace-temps et fait basculer l'escalator vers l'avant.
+                  Mais voilà : <strong className="text-indigo-300">la masse et l'énergie qui t'entourent viennent poser leur poids sur ce tapis roulant</strong>. Une planète, une étoile, un nuage de gaz brûlant : tout cela pèse sur le tissu de l'espace-temps et fait basculer le tapis roulant vers l'avant.
                 </p>
               </div>
               
               <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
                 <div className="bg-green-900/20 p-4 rounded-lg border border-green-400/30">
                   <h4 className="font-semibold text-green-300 mb-2">Région calme</h4>
-                  <p className="text-xs sm:text-sm text-gray-300">Pente douce, avancement surtout dans le temps</p>
+                  <p className="text-xs sm:text-sm text-gray-300">Tapis roulant avec pente douce, avancement surtout dans le temps</p>
                 </div>
                 <div className="bg-yellow-900/20 p-4 rounded-lg border border-yellow-400/30">
                   <h4 className="font-semibold text-yellow-300 mb-2">Près d'une étoile</h4>
-                  <p className="text-xs sm:text-sm text-gray-300">Pente plus raide, budget glisse vers l'échelle</p>
+                  <p className="text-xs sm:text-sm text-gray-300">Tapis roulant avec pente plus raide, budget glisse vers l'échelle</p>
                 </div>
                 <div className="bg-red-900/20 p-4 rounded-lg border border-red-400/30">
                   <h4 className="font-semibold text-red-300 mb-2">Trou noir</h4>
-                  <p className="text-xs sm:text-sm text-gray-300">Pente verticale, chute libre vers l'échelle</p>
+                  <p className="text-xs sm:text-sm text-gray-300">Tapis roulant avec pente verticale, chute libre vers l'échelle</p>
                 </div>
               </div>
               

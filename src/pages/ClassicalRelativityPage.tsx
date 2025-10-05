@@ -56,26 +56,70 @@ export const ClassicalRelativityPage: React.FC = () => {
             
             <div className="space-y-4 sm:space-y-6">
               <div className="bg-cyan-900/20 p-4 sm:p-6 rounded-lg border-l-4 border-cyan-400">
-                <h3 className="text-lg sm:text-xl font-semibold text-cyan-200 mb-3">Le problème initial</h3>
+                <h3 className="text-lg sm:text-xl font-semibold text-cyan-200 mb-3">La naissance de la Relativité Restreinte</h3>
+                <p className="text-sm sm:text-base text-gray-200 leading-relaxed mb-4">
+                  Au début du XXe siècle, la physique semblait déjà presque complète : Newton décrivait les mouvements, Maxwell expliquait la lumière et l'électricité. Pourtant, une expérience marqua un tournant : celle de <strong className="text-white">Michelson et Morley</strong>. Elle montra que la lumière se déplace toujours à la même vitesse, peu importe le mouvement de l'observateur. Cela contredisait l'idée dominante de l'époque : l'existence d'un "éther" immobile dans lequel voyagerait la lumière.
+                </p>
                 <p className="text-sm sm:text-base text-gray-200 leading-relaxed">
-                  Einstein s'interrogeait : pourquoi la vitesse de la lumière semble-t-elle constante, peu importe notre mouvement ? 
-                  Cette question simple a mené à une révolution conceptuelle.
+                  Einstein, jeune physicien, ne s'est pas contenté de ce paradoxe. Il aimait se lancer dans des <strong className="text-cyan-300">expériences de pensée</strong>. L'une d'elles fut décisive : <em className="text-cyan-200">« Que se passerait-il si je courais à côté d'un rayon lumineux ? »</em>
+                </p>
+              </div>
+              
+              <div className="bg-blue-900/20 p-4 sm:p-6 rounded-lg border-l-4 border-blue-400">
+                <h3 className="text-lg sm:text-xl font-semibold text-blue-200 mb-3">L'intuition révolutionnaire</h3>
+                <p className="text-sm sm:text-base text-gray-200 leading-relaxed">
+                  Selon les équations de Maxwell, courir à côté d'un rayon lumineux donnerait un champ figé, ce qui est impossible. Ce simple raisonnement lui fit comprendre que ce n'était pas la lumière qu'il fallait corriger, mais <strong className="text-white">notre conception du temps et de l'espace</strong>.
                 </p>
               </div>
               
               <div className="space-y-3 sm:space-y-4 text-sm sm:text-base lg:text-lg text-gray-200 leading-relaxed">
                 <p>
-                  <strong className="text-white">Les deux postulats fondamentaux :</strong>
+                  <strong className="text-white">En 1905, il formula la Relativité Restreinte à partir de deux principes :</strong>
                 </p>
-                <ul className="list-disc list-inside space-y-2 ml-4">
-                  <li>Les lois de la physique sont identiques dans tous les référentiels inertiels</li>
-                  <li>La vitesse de la lumière dans le vide est constante pour tous les observateurs</li>
-                </ul>
+                <div className="bg-indigo-900/30 p-4 rounded-lg space-y-3">
+                  <div className="flex items-start">
+                    <span className="text-cyan-400 font-bold mr-3">1.</span>
+                    <p>Les lois de la physique sont les mêmes dans tous les référentiels en mouvement rectiligne uniforme.</p>
+                  </div>
+                  <div className="flex items-start">
+                    <span className="text-cyan-400 font-bold mr-3">2.</span>
+                    <p>La vitesse de la lumière est la même pour tous les observateurs, quel que soit leur mouvement.</p>
+                  </div>
+                </div>
                 
                 <p>
-                  <strong className="text-cyan-300">Conséquences révolutionnaires :</strong> Le temps n'est plus absolu ! 
-                  Il se dilate avec la vitesse, créant des effets contre-intuitifs mais mesurables.
+                  <strong className="text-cyan-300">De ces deux postulats, découlent des conséquences révolutionnaires :</strong>
                 </p>
+                
+                <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mt-4">
+                  <div className="bg-cyan-900/20 p-4 rounded-lg border border-cyan-400/30">
+                    <h4 className="font-semibold text-cyan-300 mb-2">Dilatation du temps</h4>
+                    <p className="text-xs sm:text-sm text-gray-300">Une horloge en mouvement par rapport à vous battra plus lentement.</p>
+                  </div>
+                  <div className="bg-blue-900/20 p-4 rounded-lg border border-blue-400/30">
+                    <h4 className="font-semibold text-blue-300 mb-2">Contraction des longueurs</h4>
+                    <p className="text-xs sm:text-sm text-gray-300">Les objets en mouvement apparaissent raccourcis dans la direction de leur déplacement.</p>
+                  </div>
+                  <div className="bg-purple-900/20 p-4 rounded-lg border border-purple-400/30">
+                    <h4 className="font-semibold text-purple-300 mb-2">Équivalence masse-énergie</h4>
+                    <p className="text-xs sm:text-sm text-gray-300 mb-2">La célèbre équation qui montre que masse et énergie sont deux facettes d'une même réalité :</p>
+                    <div className="text-center font-mono text-lg text-purple-200">
+                      E = mc²
+                    </div>
+                  </div>
+                </div>
+              </div>
+              
+              <div className="bg-gradient-to-r from-yellow-900/40 to-orange-900/30 p-4 sm:p-6 rounded-lg border-l-4 border-yellow-400">
+                <h3 className="text-lg sm:text-xl font-semibold text-yellow-200 mb-3">Ce que cela a changé</h3>
+                <div className="space-y-3 text-sm sm:text-base text-gray-200 leading-relaxed">
+                  <p>
+                    La Relativité Restreinte a bouleversé notre vision du monde. Elle a détruit l'idée d'un temps universel, identique pour tous. Elle a révélé que <strong className="text-white">l'espace et le temps sont liés dans une même structure : l'espace-temps</strong>.
+                  </p>
+                  <p>
+                    À son époque, cette découverte a ouvert la voie à des domaines entiers : la physique nucléaire, la physique des particules, la cosmologie moderne. Mais surtout, elle a transformé notre manière de penser : <em className="text-yellow-200">l'univers n'est pas fait pour s'adapter à notre intuition, c'est notre intuition qui doit évoluer pour comprendre l'univers</em>.
+                  </p>
+                </div>
               </div>
               
               <div className="flex justify-center mt-6">

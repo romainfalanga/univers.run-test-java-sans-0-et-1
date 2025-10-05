@@ -314,15 +314,6 @@ export const ClassicalRelativityPage: React.FC = () => {
               </div>
             </div>
           </div>
-          {/* Conclusion */}
-          <div className="bg-gradient-to-r from-yellow-900/40 to-orange-900/30 backdrop-blur-sm rounded-xl p-6 sm:p-8 border border-yellow-400/40 shadow-2xl">
-            <h3 className="text-xl sm:text-2xl font-bold text-yellow-300 mb-4">L'héritage d'Einstein</h3>
-            <p className="text-sm sm:text-base lg:text-lg text-gray-200 leading-relaxed">
-              Ces théories ne sont pas que des curiosités intellectuelles. Elles sont essentielles au fonctionnement du GPS, 
-              à la compréhension des étoiles à neutrons, et ouvrent la voie à la détection des ondes gravitationnelles. 
-              Einstein nous a montré que l'univers est bien plus étrange et merveilleux que nous l'imaginions.
-            </p>
-          </div>
         </div>
       </div>
     </div>

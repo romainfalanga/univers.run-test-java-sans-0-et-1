@@ -188,11 +188,11 @@ export const Navigation: React.FC = () => {
         
         {/* Contenu du menu avec les liens de navigation */}
         <div 
-          className="h-full flex flex-col items-center justify-start p-4 sm:p-8 pt-20 sm:pt-28 pb-20 overflow-y-auto relative z-10"
+          className="h-full flex flex-col items-center justify-start p-4 sm:p-8 pt-32 sm:pt-40 lg:pt-48 pb-20 overflow-y-auto relative z-10"
           onClick={(e) => e.stopPropagation()}
         >
           {/* Titre "Menu de Dieu" intégré dans le contenu */}
-          <div className="absolute top-8 sm:top-16 left-1/2 transform -translate-x-1/2 z-40">
+          <div className="absolute top-8 sm:top-12 lg:top-16 left-1/2 transform -translate-x-1/2 z-40">
             <div className="relative group cursor-default">
               {/* Fond principal avec gradient animé */}
               <div className="absolute inset-0 bg-gradient-to-r from-slate-900/95 via-purple-900/95 via-blue-900/95 to-indigo-900/95 rounded-3xl"></div>
@@ -240,7 +240,7 @@ export const Navigation: React.FC = () => {
           </div>
           
           {/* Bouton de fermeture X en haut à droite du contenu */}
-          <div className="flex flex-col sm:flex-row sm:justify-center sm:flex-wrap gap-6 sm:gap-8 max-w-5xl w-full flex-shrink-0 mt-8 sm:mt-12">
+          <div className="flex flex-col sm:flex-row sm:justify-center sm:flex-wrap gap-6 sm:gap-8 max-w-5xl w-full flex-shrink-0 mt-8 sm:mt-12 lg:mt-16">
             {navigationItems.map((item, index) => (
               <Link
                 key={item.path}

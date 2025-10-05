@@ -44,7 +44,7 @@ export const GeneralScaleRelativityPage: React.FC = () => {
             <div className="space-y-4 sm:space-y-6">
               <div className="bg-gradient-to-r from-purple-900/40 to-indigo-900/30 p-4 sm:p-6 rounded-lg border-l-4 border-purple-400">
                 <p className="text-base sm:text-lg text-purple-100 leading-relaxed">
-                  Imagine que tu es sur ton escalator. <strong className="text-white">Il descend toujours à la même cadence : la vitesse de la lumière</strong>. Rien n'accélère ni ne ralentit le moteur, il bat comme un métronome absolu.
+                  Imagine que tu es sur ton tapis roulant. <strong className="text-white">Il descend toujours à la même cadence : la vitesse de la lumière</strong>. Rien n'accélère ni ne ralentit le moteur, il bat comme un métronome absolu.
                 </p>
               </div>
               
@@ -54,7 +54,7 @@ export const GeneralScaleRelativityPage: React.FC = () => {
               
               <div className="bg-gradient-to-r from-indigo-900/40 to-blue-900/30 p-4 sm:p-6 rounded-lg border-l-4 border-indigo-400">
                 <p className="text-base sm:text-lg text-indigo-100 leading-relaxed">
-                  <strong className="text-white">Et ce poids agit comme une main qui appuie sur l'escalator, le faisant basculer vers l'avant.</strong> C'est la courbure de l'espace-temps qui agit sur l'inclinaison de l'escalator.
+                  <strong className="text-white">Et ce poids agit comme une main qui appuie sur le tapis roulant, le faisant basculer vers l'avant.</strong> C'est la courbure de l'espace-temps qui agit sur l'inclinaison du tapis roulant.
                 </p>
               </div>
             </div>
@@ -72,7 +72,7 @@ export const GeneralScaleRelativityPage: React.FC = () => {
                 </p>
                 <div className="bg-green-800/30 p-3 rounded-lg">
                   <p className="text-xs sm:text-sm text-green-200">
-                    <strong>Résultat :</strong> Escalator avec une pente douce. Tu avances surtout dans le temps, et à peine dans l'échelle.
+                    <strong>Résultat :</strong> Tapis roulant avec une pente douce. Tu avances surtout dans le temps, et à peine dans l'échelle.
                   </p>
                 </div>
               </div>
@@ -84,7 +84,7 @@ export const GeneralScaleRelativityPage: React.FC = () => {
                 </p>
                 <div className="bg-yellow-800/30 p-3 rounded-lg">
                   <p className="text-xs sm:text-sm text-yellow-200">
-                    <strong>Résultat :</strong> Quelqu'un appuie sur ton escalator, augmentant son inclinaison. Ton budget glisse du temps vers l'échelle.
+                    <strong>Résultat :</strong> Quelqu'un appuie sur ton tapis roulant, augmentant son inclinaison. Ton budget glisse du temps vers l'échelle.
                   </p>
                 </div>
               </div>
@@ -96,7 +96,7 @@ export const GeneralScaleRelativityPage: React.FC = () => {
                 </p>
                 <div className="bg-red-800/30 p-3 rounded-lg">
                   <p className="text-xs sm:text-sm text-red-200">
-                    <strong>Résultat :</strong> L'escalator se penche vers la verticale. Chute libre absolue vers l'échelle.
+                    <strong>Résultat :</strong> Le tapis roulant se penche vers la verticale. Chute libre absolue vers l'échelle.
                   </p>
                 </div>
               </div>
@@ -110,7 +110,7 @@ export const GeneralScaleRelativityPage: React.FC = () => {
             <div className="space-y-4 sm:space-y-6">
               <div className="bg-gradient-to-r from-orange-900/40 to-red-900/30 p-4 sm:p-6 rounded-lg border-l-4 border-orange-400">
                 <p className="text-base sm:text-lg text-orange-100 leading-relaxed">
-                  Dans une région éloignée de tout, <strong className="text-white">le rayonnement agit comme une masse diffuse, une pression permanente</strong>. L'effet est plus subtil, mais il s'ajoute : l'escalator s'incline doucement partout dans l'univers.
+                  Dans une région éloignée de tout, <strong className="text-white">le rayonnement agit comme une masse diffuse, une pression permanente</strong>. L'effet est plus subtil, mais il s'ajoute : le tapis roulant s'incline doucement partout dans l'univers.
                 </p>
               </div>
               
@@ -121,7 +121,7 @@ export const GeneralScaleRelativityPage: React.FC = () => {
               <div className="bg-gradient-to-r from-red-900/40 to-pink-900/30 p-4 sm:p-6 rounded-lg border-l-4 border-red-400">
                 <h3 className="text-lg font-semibold text-red-200 mb-3">L'Inclinaison Progressive</h3>
                 <p className="text-sm sm:text-base text-gray-200 leading-relaxed">
-                  Cette pression lumineuse constante explique pourquoi l'univers semble "s'étendre" uniformément. Ce n'est pas l'espace qui grandit, mais chaque région qui voit son escalator légèrement incliné par le rayonnement cosmique ambiant.
+                  Cette pression lumineuse constante explique pourquoi l'univers semble "s'étendre" uniformément. Ce n'est pas l'espace qui grandit, mais chaque région qui voit son tapis roulant légèrement incliné par le rayonnement cosmique ambiant.
                 </p>
               </div>
             </div>
@@ -134,7 +134,7 @@ export const GeneralScaleRelativityPage: React.FC = () => {
             <div className="space-y-4 sm:space-y-6">
               <div className="bg-gradient-to-r from-indigo-900/40 to-purple-900/30 p-4 sm:p-6 rounded-lg border-l-4 border-indigo-400">
                 <p className="text-base sm:text-lg text-indigo-100 leading-relaxed">
-                  <strong className="text-white">La masse et l'énergie n'inventent pas un nouveau moteur, elles ne modifient pas la vitesse universelle.</strong> Elles ajoutent seulement un coefficient multiplicateur à l'inclinaison de l'escalator par la déformation du tissu de l'espace-temps.
+                  <strong className="text-white">La masse et l'énergie n'inventent pas un nouveau moteur, elles ne modifient pas la vitesse universelle.</strong> Elles ajoutent seulement un coefficient multiplicateur à l'inclinaison du tapis roulant par la déformation du tissu de l'espace-temps.
                 </p>
               </div>
               
@@ -160,7 +160,7 @@ export const GeneralScaleRelativityPage: React.FC = () => {
               <div className="bg-gradient-to-r from-cyan-900/40 to-blue-900/30 p-4 sm:p-6 rounded-lg border-l-4 border-cyan-400">
                 <h3 className="text-lg font-semibold text-cyan-200 mb-3">L'Harmonie Universelle</h3>
                 <p className="text-sm sm:text-base text-gray-200 leading-relaxed">
-                  Ainsi, chaque objet dans l'univers danse sur son escalator personnel, tous synchronisés sur le même tempo cosmique, mais chacun avec son inclinaison unique, sculptée par l'environnement gravitationnel qui l'entoure.
+                  Ainsi, chaque objet dans l'univers danse sur son tapis roulant personnel, tous synchronisés sur le même tempo cosmique, mais chacun avec son inclinaison unique, sculptée par l'environnement gravitationnel qui l'entoure.
                 </p>
               </div>
             </div>

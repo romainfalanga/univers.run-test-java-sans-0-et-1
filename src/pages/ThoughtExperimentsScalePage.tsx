@@ -132,7 +132,7 @@ export const ThoughtExperimentsScalePage: React.FC = () => {
               <div className="bg-pink-900/20 p-4 sm:p-6 rounded-lg border-l-4 border-pink-400">
                 <h3 className="text-lg font-semibold text-pink-200 mb-3">La Vitesse Universelle</h3>
                 <p className="text-sm sm:text-base text-gray-200 leading-relaxed">
-                  <strong className="text-white">La vitesse de ces escalators est la même pour tous : la vitesse de la lumière.</strong> Ce rythme ne varie jamais, c'est le battement de cœur du cosmos.
+                  <strong className="text-white">La vitesse de ces tapis roulants est la même pour tous : la vitesse de la lumière.</strong> Ce rythme ne varie jamais, c'est le battement de cœur du cosmos.
                 </p>
               </div>
               
@@ -180,13 +180,13 @@ export const ThoughtExperimentsScalePage: React.FC = () => {
               </div>
               
               <p className="text-base sm:text-lg text-gray-200 leading-relaxed">
-                Chaque galaxie descend son escalator propre, à une cadence réglée par sa masse, sa lumière, son énergie et sa vitesse. Comparées entre elles, les galaxies semblent s'éloigner. <strong className="text-purple-300">Mais elles ne s'écartent pas : elles plongent chacune dans leur escalator, à la vitesse de la lumière, mais avec des inclinaisons différentes</strong>.
+                Chaque galaxie descend son tapis roulant propre, à une cadence réglée par sa masse, sa lumière, son énergie et sa vitesse. Comparées entre elles, les galaxies semblent s'éloigner. <strong className="text-purple-300">Mais elles ne s'écartent pas : elles plongent chacune dans leur tapis roulant, à la vitesse de la lumière, mais avec des inclinaisons différentes</strong>.
               </p>
               
               <div className="bg-gradient-to-r from-purple-900/40 to-pink-900/30 p-4 sm:p-6 rounded-lg border-l-4 border-purple-400">
                 <h3 className="text-lg font-semibold text-purple-200 mb-3">La Loi de Hubble Réinterprétée</h3>
                 <p className="text-sm sm:text-base text-gray-200 leading-relaxed">
-                  <strong className="text-white">La loi de Hubble — 70 km/s par mégaparsec — n'est que la traduction visible de cette réduction d'échelle par seconde.</strong> Ce n'est pas l'espace qui gonfle, c'est chaque escalator qui descend.
+                  <strong className="text-white">La loi de Hubble — 70 km/s par mégaparsec — n'est que la traduction visible de cette réduction d'échelle par seconde.</strong> Ce n'est pas l'espace qui gonfle, c'est chaque tapis roulant qui descend.
                 </p>
               </div>
               

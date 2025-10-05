@@ -252,13 +252,14 @@ export const BlackHolesScalePage: React.FC = () => {
               <div className="bg-gradient-to-r from-blue-900/40 to-indigo-900/30 p-4 sm:p-6 rounded-lg border-l-4 border-blue-400">
                 <h3 className="text-lg font-semibold text-blue-200 mb-3">Changement de Règle</h3>
                 <p className="text-sm sm:text-base text-gray-200 leading-relaxed">
-                  <strong className="text-white">C'est le moment où la règle qui mesure la réalité change.</strong> Pour l'observateur extérieur qui observe l'astre tomber dans le trou noir, tout paraît figé car ce qui se passe est projeté trop loin dans l'infiniment petit.
+                  La Relativité des échelles en donne une explication claire : <strong className="text-white">le tapis roulant propre de l'objet qui tombe penche de plus en plus, jusqu'à se dresser presque à la verticale</strong>. C'est le moment où la règle qui mesure la réalité change.
                 </p>
               </div>
               
               <div className="bg-gradient-to-r from-indigo-900/40 to-purple-900/30 p-4 sm:p-6 rounded-lg border-l-4 border-indigo-400">
                 <h3 className="text-lg font-semibold text-indigo-200 mb-3">Continuité pour l'Observateur</h3>
                 <p className="text-sm sm:text-base text-gray-200 leading-relaxed">
+                  Pour l'observateur extérieur qui observe l'astre tomber dans le trou noir, tout paraît figé car ce qui se passe est projeté trop loin dans l'infiniment petit.
                   Mais pour l'objet qui franchit l'horizon, <strong className="text-white">rien ne s'arrête : il poursuit sa marche à la vitesse de la lumière</strong>, et, dès qu'il passe l'horizon des événements, tout redevient normal, mais à un cran plus profond de la réalité.
                 </p>
               </div>

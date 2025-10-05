@@ -14,6 +14,7 @@ import { SpaceTimeScaleFabricPage } from './pages/SpaceTimeScaleFabricPage';
 import { RestrictedScaleRelativityPage } from './pages/RestrictedScaleRelativityPage';
 import { GeneralScaleRelativityPage } from './pages/GeneralScaleRelativityPage';
 import { ThoughtExperimentsScalePage } from './pages/ThoughtExperimentsScalePage';
+import { BlackHolesScalePage } from './pages/BlackHolesScalePage';
 
 // Composant pour gérer la navigation conditionnelle
 const AppContent: React.FC = () => {
@@ -37,6 +38,7 @@ const AppContent: React.FC = () => {
         <Route path="/relativite-restreinte-echelles" element={<RestrictedScaleRelativityPage />} />
         <Route path="/relativite-generale-echelles" element={<GeneralScaleRelativityPage />} />
         <Route path="/experiences-pensee-echelles" element={<ThoughtExperimentsScalePage />} />
+        <Route path="/trous-noirs-echelles" element={<BlackHolesScalePage />} />
       </Routes>
     </div>
   );

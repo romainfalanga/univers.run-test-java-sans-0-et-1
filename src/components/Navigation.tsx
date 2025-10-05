@@ -29,9 +29,9 @@ export const Navigation: React.FC = () => {
       icon: '🌌'
     },
     {
-      path: '/relativity',
-      title: 'Relativité Restreinte',
-      shortTitle: 'Relativité Restreinte',
+      path: '/relativite-classique',
+      title: 'Relativité Classique',
+      shortTitle: 'Relativité Classique',
       gradient: 'from-cyan-500/20 to-blue-500/20',
       hoverGradient: 'hover:from-cyan-500/10 hover:to-blue-500/10',
       textColor: 'text-cyan-300',
@@ -47,26 +47,6 @@ export const Navigation: React.FC = () => {
       dotColor: 'bg-cyan-400',
       dotColor2: 'bg-blue-400',
       icon: '⚡'
-    },
-    {
-      path: '/black-hole-concept',
-      title: 'Horizon des Événements',
-      shortTitle: 'Horizon des Événements',
-      gradient: 'from-purple-500/20 to-pink-500/20',
-      hoverGradient: 'hover:from-purple-500/10 hover:to-pink-500/10',
-      textColor: 'text-purple-300',
-      hoverTextColor: 'hover:text-purple-300',
-      borderColor: 'border-purple-400/30',
-      hoverBorderColor: 'hover:border-purple-400/20',
-      shadowColor: 'shadow-purple-500/25',
-      hoverShadowColor: 'hover:shadow-purple-500/20',
-      glowFrom: 'from-purple-400/10',
-      glowTo: 'to-pink-400/10',
-      hoverGlowFrom: 'from-purple-400/5',
-      hoverGlowTo: 'to-pink-400/5',
-      dotColor: 'bg-purple-400',
-      dotColor2: 'bg-pink-400',
-      icon: '🕳️'
     }
   ];
 

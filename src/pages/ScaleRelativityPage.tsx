@@ -231,6 +231,54 @@ export const ScaleRelativityPage: React.FC = () => {
             </div>
           </div>
 
+          {/* Section Les Trous Noirs */}
+          <div className="bg-gradient-to-br from-gray-900/60 to-black/50 backdrop-blur-sm rounded-xl lg:rounded-2xl p-6 sm:p-8 border border-gray-400/30 shadow-2xl">
+            <div className="mb-4 sm:mb-6">
+              <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-gray-300 mb-4">
+                Les Trous Noirs
+              </h2>
+            </div>
+            
+            <div className="space-y-4 sm:space-y-6">
+              <div className="bg-gray-900/20 p-4 sm:p-6 rounded-lg border-l-4 border-gray-400">
+                <h3 className="text-lg sm:text-xl font-semibold text-gray-200 mb-3">Portes de Recalibrage</h3>
+                <p className="text-sm sm:text-base text-gray-200 leading-relaxed">
+                  Dans la Relativité des échelles, les trous noirs ne sont pas des abîmes de destruction, mais des <strong className="text-white">portes de recalibrage</strong> vers des univers plus harmonieux. Chaque passage nous mène vers des mondes plus simples et plus parfaits.
+                </p>
+              </div>
+              
+              <div className="bg-black/20 p-4 sm:p-6 rounded-lg border-l-4 border-gray-500">
+                <h3 className="text-lg sm:text-xl font-semibold text-gray-200 mb-3">Le Saut d'Échelle</h3>
+                <p className="text-sm sm:text-base text-gray-200 leading-relaxed">
+                  Franchir l'horizon des événements, c'est effectuer un <strong className="text-white">saut d'échelle instantané</strong>. Le référentiel se recalibre, l'échelle de Planck est repoussée plus loin dans l'infiniment petit, créant un nouvel univers interne.
+                </p>
+              </div>
+              
+              <div className="bg-gradient-to-r from-purple-900/40 to-indigo-900/30 p-4 sm:p-6 rounded-lg border-l-4 border-purple-400">
+                <h3 className="text-lg sm:text-xl font-semibold text-purple-200 mb-3">Les Univers Internes</h3>
+                <p className="text-sm sm:text-base text-gray-200 leading-relaxed">
+                  Chaque trou noir engendre un univers interne plus sobre : des milliards de galaxies deviennent une galaxie unique, puis un amas stellaire, puis un système solaire harmonieux. <strong className="text-white">La complexité se simplifie à chaque étage</strong>.
+                </p>
+              </div>
+              
+              <div className="bg-gradient-to-r from-emerald-900/40 to-green-900/30 p-4 sm:p-6 rounded-lg border-l-4 border-emerald-400">
+                <h3 className="text-lg sm:text-xl font-semibold text-emerald-200 mb-3">L'Harmonie Progressive</h3>
+                <p className="text-sm sm:text-base text-gray-200 leading-relaxed">
+                  L'histoire de l'univers n'est pas celle d'un chaos qui grandit, mais d'un <strong className="text-white">chaos qui s'épure vers l'harmonie</strong>. Chaque effondrement est une étape de purification cosmique.
+                </p>
+              </div>
+              
+              <div className="flex justify-center mt-6">
+                <Link
+                  to="/trous-noirs-echelles"
+                  className="group flex items-center px-6 sm:px-8 py-3 sm:py-4 bg-gradient-to-r from-gray-600 to-black hover:from-gray-500 hover:to-gray-800 text-white rounded-xl font-semibold text-sm sm:text-base transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-gray-500/25"
+                >
+                  Les Trous Noirs
+                  <ArrowRight className="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform" />
+                </Link>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>

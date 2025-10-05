@@ -89,6 +89,67 @@ export const ClassicalRelativityPage: React.FC = () => {
               </div>
             </div>
           </div>
+
+          {/* Section Relativité Générale */}
+          <div className="bg-gradient-to-br from-purple-900/40 to-indigo-900/30 backdrop-blur-sm rounded-xl lg:rounded-2xl p-6 sm:p-8 border border-purple-400/30 shadow-2xl">
+            <div className="flex items-center mb-4 sm:mb-6">
+              <Globe className="w-8 h-8 sm:w-10 sm:h-10 mr-3 sm:mr-4 text-purple-400" />
+              <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-purple-300">
+                Relativité Générale (1915)
+              </h2>
+            </div>
+            
+            <div className="space-y-4 sm:space-y-6">
+              <div className="bg-purple-900/20 p-4 sm:p-6 rounded-lg border-l-4 border-purple-400">
+                <h3 className="text-lg sm:text-xl font-semibold text-purple-200 mb-3">L'intuition géniale</h3>
+                <p className="text-sm sm:text-base text-gray-200 leading-relaxed">
+                  Einstein réalisa que la gravité n'est pas une force, mais une courbure de l'espace-temps. 
+                  Une masse déforme le tissu de l'univers comme une boule sur un trampoline.
+                </p>
+              </div>
+              
+              <div className="space-y-3 sm:space-y-4 text-sm sm:text-base lg:text-lg text-gray-200 leading-relaxed">
+                <p>
+                  <strong className="text-white">Le principe d'équivalence :</strong> 
+                  Impossible de distinguer entre accélération et gravité dans un référentiel fermé.
+                </p>
+                
+                <p>
+                  <strong className="text-purple-300">Les équations d'Einstein :</strong> 
+                  Elles décrivent comment la matière et l'énergie courbent l'espace-temps, 
+                  et comment cette courbure guide le mouvement de la matière.
+                </p>
+                
+                <div className="bg-indigo-900/30 p-4 rounded-lg">
+                  <p className="text-center font-mono text-lg sm:text-xl text-indigo-200">
+                    G<sub>μν</sub> = 8πT<sub>μν</sub>
+                  </p>
+                  <p className="text-center text-sm text-gray-300 mt-2">
+                    "La géométrie de l'espace-temps = Contenu en énergie-matière"
+                  </p>
+                </div>
+              </div>
+              
+              <div className="flex justify-center mt-6">
+                <Link
+                  to="/relativite-generale"
+                  className="group flex items-center px-6 sm:px-8 py-3 sm:py-4 bg-gradient-to-r from-purple-600 to-indigo-600 hover:from-purple-500 hover:to-indigo-500 text-white rounded-xl font-semibold text-sm sm:text-base transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-purple-500/25"
+                >
+                  Explorer la Relativité Générale
+                  <ArrowRight className="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform" />
+                </Link>
+              </div>
+            </div>
+          </div>
+          {/* Conclusion */}
+          <div className="bg-gradient-to-r from-yellow-900/40 to-orange-900/30 backdrop-blur-sm rounded-xl p-6 sm:p-8 border border-yellow-400/40 shadow-2xl">
+            <h3 className="text-xl sm:text-2xl font-bold text-yellow-300 mb-4">L'héritage d'Einstein</h3>
+            <p className="text-sm sm:text-base lg:text-lg text-gray-200 leading-relaxed">
+              Ces théories ne sont pas que des curiosités intellectuelles. Elles sont essentielles au fonctionnement du GPS, 
+              à la compréhension des étoiles à neutrons, et ouvrent la voie à la détection des ondes gravitationnelles. 
+              Einstein nous a montré que l'univers est bien plus étrange et merveilleux que nous l'imaginions.
+            </p>
+          </div>
         </div>
       </div>
     </div>

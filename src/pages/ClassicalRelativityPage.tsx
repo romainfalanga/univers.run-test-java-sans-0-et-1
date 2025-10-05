@@ -48,7 +48,6 @@ export const ClassicalRelativityPage: React.FC = () => {
           {/* Section Relativité Restreinte */}
           <div className="bg-gradient-to-br from-cyan-900/40 to-blue-900/30 backdrop-blur-sm rounded-xl lg:rounded-2xl p-6 sm:p-8 border border-cyan-400/30 shadow-2xl">
             <div className="flex items-center mb-4 sm:mb-6">
-              <Zap className="w-8 h-8 sm:w-10 sm:h-10 mr-3 sm:mr-4 text-cyan-400" />
               <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-cyan-300">
                 Relativité Restreinte (1905)
               </h2>
@@ -208,7 +207,7 @@ export const ClassicalRelativityPage: React.FC = () => {
                   to="/relativity"
                   className="group flex items-center px-6 sm:px-8 py-3 sm:py-4 bg-gradient-to-r from-cyan-600 to-blue-600 hover:from-cyan-500 hover:to-blue-500 text-white rounded-xl font-semibold text-sm sm:text-base transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-cyan-500/25"
                 >
-                  Calculateur Interactif
+                  Relativité Restreinte
                   <ArrowRight className="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform" />
                 </Link>
               </div>
@@ -218,7 +217,6 @@ export const ClassicalRelativityPage: React.FC = () => {
           {/* Section Relativité Générale */}
           <div className="bg-gradient-to-br from-purple-900/40 to-indigo-900/30 backdrop-blur-sm rounded-xl lg:rounded-2xl p-6 sm:p-8 border border-purple-400/30 shadow-2xl">
             <div className="flex items-center mb-4 sm:mb-6">
-              <Globe className="w-8 h-8 sm:w-10 sm:h-10 mr-3 sm:mr-4 text-purple-400" />
               <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-purple-300">
                 Relativité Générale (1915)
               </h2>
@@ -310,7 +308,7 @@ export const ClassicalRelativityPage: React.FC = () => {
                   to="/relativite-generale"
                   className="group flex items-center px-6 sm:px-8 py-3 sm:py-4 bg-gradient-to-r from-purple-600 to-indigo-600 hover:from-purple-500 hover:to-indigo-500 text-white rounded-xl font-semibold text-sm sm:text-base transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-purple-500/25"
                 >
-                  Explorer la Relativité Générale
+                  Relativité Générale
                   <ArrowRight className="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform" />
                 </Link>
               </div>

@@ -1,4 +1,6 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
+import { ArrowLeft } from 'lucide-react';
 import { Globe } from 'lucide-react';
 
 export const GeneralRelativityPage: React.FC = () => {
@@ -19,6 +21,17 @@ export const GeneralRelativityPage: React.FC = () => {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-4 sm:py-6 lg:py-8 relative z-10">
         {/* En-tête */}
         <header className="text-center mb-6 sm:mb-8 lg:mb-12">
+          {/* Bouton Retour */}
+          <div className="flex justify-center mb-4 sm:mb-6">
+            <Link
+              to="/relativite-classique"
+              className="group flex items-center px-4 sm:px-6 py-2 sm:py-3 bg-gradient-to-r from-gray-600 to-gray-700 hover:from-gray-500 hover:to-gray-600 text-white rounded-lg font-semibold text-sm sm:text-base transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-gray-500/25"
+            >
+              <ArrowLeft className="w-4 h-4 sm:w-5 sm:h-5 mr-2 group-hover:-translate-x-1 transition-transform" />
+              Retour
+            </Link>
+          </div>
+          
           <div className="flex items-center justify-center mb-4 sm:mb-6">
             <Globe className="w-12 h-12 sm:w-16 sm:h-16 text-purple-400 mr-4" />
             <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold bg-gradient-to-r from-purple-300 via-indigo-300 via-blue-300 to-cyan-300 bg-clip-text text-transparent bg-[length:400%_400%] animate-gradient-x drop-shadow-[0_0_30px_rgba(147,51,234,0.8)]">

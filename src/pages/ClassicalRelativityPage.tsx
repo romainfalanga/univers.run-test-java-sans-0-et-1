@@ -145,25 +145,56 @@ export const ClassicalRelativityPage: React.FC = () => {
             
             <div className="space-y-4 sm:space-y-6">
               <div className="bg-purple-900/20 p-4 sm:p-6 rounded-lg border-l-4 border-purple-400">
-                <h3 className="text-lg sm:text-xl font-semibold text-purple-200 mb-3">L'intuition géniale</h3>
+                <h3 className="text-lg sm:text-xl font-semibold text-purple-200 mb-3">La naissance de la Relativité Générale</h3>
+                <p className="text-sm sm:text-base text-gray-200 leading-relaxed mb-4">
+                  Après avoir montré avec la Relativité Restreinte que l'espace et le temps formaient une seule entité — l'espace-temps — Einstein s'est attaqué à une question plus fondamentale encore : <strong className="text-white">la gravité</strong>.
+                </p>
                 <p className="text-sm sm:text-base text-gray-200 leading-relaxed">
-                  Einstein réalisa que la gravité n'est pas une force, mais une courbure de l'espace-temps. 
-                  Une masse déforme le tissu de l'univers comme une boule sur un trampoline.
+                  Newton avait proposé une loi très efficace : les corps s'attirent selon une force proportionnelle à leur masse et inversement proportionnelle au carré de leur distance. Mais Newton ne disait pas <em className="text-purple-200">pourquoi</em> cette attraction existait, et son modèle impliquait une action instantanée à distance, ce qui contredisait l'idée qu'aucune influence ne peut voyager plus vite que la lumière.
                 </p>
               </div>
               
+              <div className="bg-indigo-900/20 p-4 sm:p-6 rounded-lg border-l-4 border-indigo-400">
+                <h3 className="text-lg sm:text-xl font-semibold text-indigo-200 mb-3">L'intuition géniale : "La pensée la plus heureuse de ma vie"</h3>
+                <p className="text-sm sm:text-base text-gray-200 leading-relaxed mb-4">
+                  En 1907, Einstein a une intuition qu'il appellera plus tard <strong className="text-indigo-300">« la pensée la plus heureuse de ma vie »</strong>. Il imagine un homme qui tombe d'un toit. Pendant la chute, cet homme ne ressent plus son poids : il est en état d'apesanteur.
+                </p>
+                <p className="text-sm sm:text-base text-gray-200 leading-relaxed">
+                  Cela révèle que <strong className="text-white">la gravité et l'accélération sont indissociables</strong>. C'est le <strong className="text-indigo-300">principe d'équivalence</strong> : un champ gravitationnel est équivalent à une accélération.
+                </p>
+              </div>
+              
+              <div className="bg-purple-900/20 p-4 sm:p-6 rounded-lg border-l-4 border-purple-400">
+                <h3 className="text-lg sm:text-xl font-semibold text-purple-200 mb-3">La révélation : la gravité comme géométrie</h3>
+                <p className="text-sm sm:text-base text-gray-200 leading-relaxed">
+                  De là, Einstein comprend que <strong className="text-white">la gravité n'est pas une force mystérieuse, mais une conséquence de la courbure de l'espace-temps</strong>. Les objets massifs comme la Terre déforment l'espace-temps autour d'eux, et les autres objets suivent les trajectoires dictées par cette courbure.
+                </p>
+                <p className="text-sm sm:text-base text-gray-200 leading-relaxed mt-3">
+                  Quand une pomme tombe, elle ne "subit" pas une force invisible : <em className="text-purple-200">elle suit simplement le chemin le plus naturel dans un espace-temps déformé</em>.
+                </p>
+              </div>
+              
+              <div className="bg-blue-900/20 p-4 sm:p-6 rounded-lg border-l-4 border-blue-400">
+                <h3 className="text-lg sm:text-xl font-semibold text-blue-200 mb-3">La formulation et les preuves</h3>
+                <p className="text-sm sm:text-base text-gray-200 leading-relaxed mb-4">
+                  Après huit années de recherches mathématiques, Einstein présente en 1915 les équations de la Relativité Générale. Celles-ci décrivent comment la matière et l'énergie façonnent l'espace-temps, et comment cette géométrie influence le mouvement des corps.
+                </p>
+                <p className="text-sm sm:text-base text-gray-200 leading-relaxed mb-3">
+                  <strong className="text-blue-300">La théorie trouve vite des confirmations spectaculaires :</strong>
+                </p>
+                <div className="space-y-2 text-sm sm:text-base text-gray-200">
+                  <div className="flex items-start">
+                    <span className="text-blue-400 font-bold mr-3">•</span>
+                    <p>Elle explique l'anomalie de l'orbite de Mercure, que Newton ne parvenait pas à justifier.</p>
+                  </div>
+                  <div className="flex items-start">
+                    <span className="text-blue-400 font-bold mr-3">•</span>
+                    <p>Elle prédit et vérifie la déviation de la lumière par la gravité, observée en 1919 lors d'une éclipse.</p>
+                  </div>
+                </div>
+              </div>
+              
               <div className="space-y-3 sm:space-y-4 text-sm sm:text-base lg:text-lg text-gray-200 leading-relaxed">
-                <p>
-                  <strong className="text-white">Le principe d'équivalence :</strong> 
-                  Impossible de distinguer entre accélération et gravité dans un référentiel fermé.
-                </p>
-                
-                <p>
-                  <strong className="text-purple-300">Les équations d'Einstein :</strong> 
-                  Elles décrivent comment la matière et l'énergie courbent l'espace-temps, 
-                  et comment cette courbure guide le mouvement de la matière.
-                </p>
-                
                 <div className="bg-indigo-900/30 p-4 rounded-lg">
                   <p className="text-center font-mono text-lg sm:text-xl text-indigo-200">
                     G<sub>μν</sub> = 8πT<sub>μν</sub>
@@ -171,6 +202,25 @@ export const ClassicalRelativityPage: React.FC = () => {
                   <p className="text-center text-sm text-gray-300 mt-2">
                     "La géométrie de l'espace-temps = Contenu en énergie-matière"
                   </p>
+                </div>
+              </div>
+              
+              <div className="bg-gradient-to-r from-yellow-900/40 to-orange-900/30 p-4 sm:p-6 rounded-lg border-l-4 border-yellow-400">
+                <h3 className="text-lg sm:text-xl font-semibold text-yellow-200 mb-3">Ce que cela a changé</h3>
+                <div className="space-y-3 text-sm sm:text-base text-gray-200 leading-relaxed">
+                  <p>
+                    <strong className="text-white">La Relativité Générale a transformé notre vision de l'univers :</strong>
+                  </p>
+                  <div className="space-y-2">
+                    <div className="flex items-start">
+                      <span className="text-yellow-400 font-bold mr-3">•</span>
+                      <p>Elle a ouvert la porte à la cosmologie moderne : l'expansion de l'univers, les trous noirs, les ondes gravitationnelles.</p>
+                    </div>
+                    <div className="flex items-start">
+                      <span className="text-yellow-400 font-bold mr-3">•</span>
+                      <p>Elle a montré que l'espace et le temps ne sont pas un simple décor, mais des acteurs dynamiques de la réalité.</p>
+                    </div>
+                  </div>
                 </div>
               </div>
               

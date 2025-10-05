@@ -110,6 +110,87 @@ export const ClassicalRelativityPage: React.FC = () => {
                 </div>
               </div>
               
+              {/* Section sur la formule E=mc² */}
+              <div className="bg-gradient-to-r from-purple-900/30 to-pink-900/20 p-4 sm:p-6 rounded-lg border-l-4 border-purple-400">
+                <h3 className="text-lg sm:text-xl font-semibold text-purple-200 mb-3">La formule de la Relativité Restreinte</h3>
+                <div className="space-y-4 text-sm sm:text-base text-gray-200 leading-relaxed">
+                  <p>
+                    La Relativité Restreinte, publiée par Einstein en 1905, a donné naissance à une formule devenue l'une des plus célèbres de toute la science :
+                  </p>
+                  
+                  <div className="text-center bg-purple-900/40 p-4 rounded-lg border border-purple-400/30">
+                    <div className="text-3xl font-mono text-purple-200 mb-2">E = mc²</div>
+                    <p className="text-sm text-gray-300">
+                      Elle énonce que la masse (m) et l'énergie (E) sont deux aspects d'une même réalité, reliés par la vitesse de la lumière (c), dont le carré agit comme un facteur gigantesque.
+                    </p>
+                  </div>
+                  
+                  <div className="bg-pink-900/20 p-4 rounded-lg border-l-4 border-pink-400">
+                    <h4 className="text-base sm:text-lg font-semibold text-pink-200 mb-3">Que signifie cette formule ?</h4>
+                    <p className="mb-3">
+                      Avant Einstein, on pensait que la masse était une propriété fixe et que l'énergie se limitait au mouvement ou à la chaleur. La formule bouleverse cette vision :
+                    </p>
+                    <div className="space-y-2">
+                      <div className="flex items-start">
+                        <span className="text-pink-400 font-bold mr-3">•</span>
+                        <p>Même un objet immobile contient une quantité d'énergie colossale simplement du fait qu'il possède une masse.</p>
+                      </div>
+                      <div className="flex items-start">
+                        <span className="text-pink-400 font-bold mr-3">•</span>
+                        <p>Inversement, l'énergie peut donner naissance à de la matière.</p>
+                      </div>
+                    </div>
+                    <p className="mt-3 text-pink-100">
+                      C'est ce principe qui explique l'énergie libérée par le Soleil (qui transforme de la masse en lumière et chaleur), ou encore le fonctionnement des réacteurs et des bombes nucléaires.
+                    </p>
+                  </div>
+                  
+                  <div className="bg-indigo-900/20 p-4 rounded-lg border-l-4 border-indigo-400">
+                    <h4 className="text-base sm:text-lg font-semibold text-indigo-200 mb-3">Le budget d'espace-temps</h4>
+                    <p className="mb-3">
+                      Une autre conséquence de la Relativité Restreinte est que chacun d'entre nous dispose d'un <strong className="text-white">budget d'espace-temps</strong>. On avance toujours à la vitesse de la lumière dans l'espace-temps, mais ce mouvement peut se répartir différemment :
+                    </p>
+                    <div className="space-y-2 mb-3">
+                      <div className="flex items-start">
+                        <span className="text-indigo-400 font-bold mr-3">•</span>
+                        <p>Si l'on est au repos dans l'espace, on "dépense" tout son budget à avancer dans le temps : c'est le vieillissement normal.</p>
+                      </div>
+                      <div className="flex items-start">
+                        <span className="text-indigo-400 font-bold mr-3">•</span>
+                        <p>Si l'on se déplace vite dans l'espace, il reste moins de budget pour avancer dans le temps : le temps s'écoule plus lentement.</p>
+                      </div>
+                    </div>
+                    <p className="text-indigo-100">
+                      Ainsi, un voyageur qui s'approche de la vitesse de la lumière vieillit moins vite que ceux qui restent immobiles. C'est la <strong className="text-white">dilatation du temps</strong>, un effet confirmé par de nombreuses expériences.
+                    </p>
+                  </div>
+                  
+                  <div className="bg-cyan-900/20 p-4 rounded-lg border-l-4 border-cyan-400">
+                    <h4 className="text-base sm:text-lg font-semibold text-cyan-200 mb-3">Les conséquences majeures</h4>
+                    <p className="mb-3">La Relativité Restreinte a transformé notre perception de l'univers :</p>
+                    <div className="space-y-2 mb-3">
+                      <div className="flex items-start">
+                        <span className="text-cyan-400 font-bold mr-3">•</span>
+                        <p>Elle explique pourquoi la vitesse de la lumière est une limite absolue.</p>
+                      </div>
+                      <div className="flex items-start">
+                        <span className="text-cyan-400 font-bold mr-3">•</span>
+                        <p>Elle révèle que masse et énergie sont interchangeables.</p>
+                      </div>
+                      <div className="flex items-start">
+                        <span className="text-cyan-400 font-bold mr-3">•</span>
+                        <p>Elle montre que l'espace et le temps ne sont plus séparés mais forment une seule structure : l'espace-temps.</p>
+                      </div>
+                    </div>
+                    <div className="bg-gradient-to-r from-cyan-900/40 to-purple-900/40 p-3 rounded-lg border border-cyan-400/30">
+                      <p className="text-cyan-100 font-medium">
+                        👉 <strong>En résumé :</strong> la formule <span className="font-mono text-purple-200">E = mc²</span> n'est pas seulement un symbole scientifique. Elle nous dit que la matière est de l'énergie concentrée, et que notre expérience du temps et de l'espace dépend de la manière dont nous dépensons notre budget d'espace-temps.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              
               <div className="bg-gradient-to-r from-yellow-900/40 to-orange-900/30 p-4 sm:p-6 rounded-lg border-l-4 border-yellow-400">
                 <h3 className="text-lg sm:text-xl font-semibold text-yellow-200 mb-3">Ce que cela a changé</h3>
                 <div className="space-y-3 text-sm sm:text-base text-gray-200 leading-relaxed">
